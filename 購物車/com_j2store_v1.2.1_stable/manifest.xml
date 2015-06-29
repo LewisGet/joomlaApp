@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+  <name>com_j2store</name>
+  <author>Sasi varna kumar</author>
+  <creationDate>Sep 2012</creationDate>
+  <copyright>Copyright (c) 2011 - 2016 Weblogicx India Private Ltd. All rights reserved.</copyright>
+  <authorEmail>support@j2store.org</authorEmail>
+  <authorUrl>http://j2store.org</authorUrl>
+  <version>1.2.1</version>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <description><![CDATA[<h3>J2 Store V 1.2.1 </h3>
+       <p style="color:red;font-weight:bold">
+		<b>NOTE FOR THOSE UPGRADED FROM 1.1/1.2 to 1.2.1: </b><br />
+		A SQL backup of j2store tables is automatically taken and saved in /administrator/components/com_j2store/backup 
+		Download this file and keep it safe. In case, you decided to go back to old version (1.2), this will help you. </p>
+		
+      The Plugin extends the Joomla content/ article with an <b>e-commerce feature.</b> The Features include:
+      <ul>
+      <li>provides an ajax shopping cart function to Joomla content</li>
+      <li>Orders, Shipping and Payment options </li>
+      <li>Convert Joomla article into products</li>
+      <li>Product attributes for Joomla article </li>
+      <li>Paypal and Authorize.net, OGone pay, Sage pay payment gateways </li>
+      <li>Guest checkout </li>
+      <li>Global discount and minimum order settings</li>
+      <li>Simple, Quick and Unobstrusive</li>
+      <li>and a lot more</li>
+      <li>read more at <a href="http://j2store.org">J2 Store website</a> </li>
+      </ul>
+      <p>You can request for more payment gateway integration. We also take customisation work. Allow us to set your shop. 
+      <br /> Customisation starts from USD 50. </p>
+      
+      Please contact to us for more info <a href="mailto:support@j2store.org">support@j2store.org</a>]]>
+      </description>
+       <installfile>install.j2store.php</installfile>
+		<uninstallfile>uninstall.j2store.php</uninstallfile>
+		<scriptfile>script.j2store.php</scriptfile>
+	
+	<updateservers>
+		<server type="extension" priority="1" name="J2Store Updates"><![CDATA[http://j2store.org/update.xml]]></server>
+	</updateservers>	
+		
+    <install>
+    <sql>
+      <file driver="mysql" charset="utf8">install.j2store.sql</file>
+    </sql>
+  </install>
+  <uninstall>
+    <sql>
+      <file driver="mysql" charset="utf8">uninstall.j2store.sql</file>
+    </sql>
+  </uninstall>
+  
+  <update> <!-- Runs on update; New in 2.5 -->
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+      
+      
+  <files folder="components/com_j2store">
+    <folder>css</folder>
+    <folder>js</folder>
+    <folder>images</folder>
+    <folder>controllers</folder>
+    <folder>views</folder>
+    <folder>models</folder>
+    <folder>helpers</folder>
+    <filename>j2store.php</filename>
+    <filename>controller.php</filename>
+     <filename>router.php</filename>
+    <filename>index.html</filename>   
+  </files>
+  
+  <languages folder="language/en-GB">
+	  <language tag="en-GB">en-GB.com_j2store.ini</language>	
+  </languages>
+  
+  <administration>
+  
+  <menu img="components/com_j2store/images/j2store-icon.png" view="cpanel">com_j2store</menu>
+   <files folder="administrator/components/com_j2store">
+	 <folder>css</folder>
+	 <folder>js</folder>
+	 <folder>images</folder>
+	 <folder>backup</folder>
+	  <folder>tables</folder>
+	  <folder>controllers</folder>
+	  <folder>models</folder>
+	  <folder>views</folder>
+	  <folder>library</folder>
+	  <folder>helpers</folder>
+	  <folder>elements</folder>
+	  <folder>sql</folder>
+	  <filename>admin.j2store.php</filename>
+	   <filename>controller.php</filename>
+	  <filename>index.html</filename>
+	   <filename>config.xml</filename>
+      <filename>install.j2store.sql</filename>
+      <filename>uninstall.j2store.sql</filename>
+     </files> 
+     
+   <languages folder="administrator/language/en-GB">
+      <language tag="en-GB">en-GB.com_j2store.ini</language>
+      <language tag="en-GB">en-GB.com_j2store.menu.ini</language>
+      <language tag="en-GB">en-GB.com_j2store.sys.ini</language>      
+      <language tag="en-GB">en-GB.plg_j2store_payment_offline.ini</language>
+      <language tag="en-GB">en-GB.plg_content_j2store.ini</language>
+	  <language tag="en-GB">en-GB.plg_content_j2store.sys.ini</language>
+   </languages>
+    </administration>
+
+    <modules>
+    <module module="mod_j2store_cart"/>    
+  </modules>
+  
+  <plugins>
+    <plugin plugin="j2store" group="system" />
+    <plugin plugin="j2store" group="user" />
+    <plugin plugin="j2store" group="content" />
+    <plugin plugin="payment_offline" group="j2store" />    
+  </plugins>   
+     
+</extension>

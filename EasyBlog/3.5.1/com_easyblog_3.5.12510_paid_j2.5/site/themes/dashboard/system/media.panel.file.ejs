@@ -1,0 +1,90 @@
+<?php
+/**
+* @package		EasyBlog
+* @copyright	Copyright (C) 2010 Stack Ideas Private Limited. All rights reserved.
+* @license		GNU/GPL, see LICENSE.php
+* EasyBlog is free software. This version may have been modified pursuant
+* to the GNU General Public License, and as distributed it includes or
+* is derivative of works licensed under the GNU General Public License or
+* other free or open source software licenses.
+* See COPYRIGHT.php for copyright notices and details.
+*/
+
+// Check to ensure this file is included in Joomla!
+defined('_JEXEC') or die( 'Restricted access' );
+?>
+<div class="panelHeader">
+	<button type="button" class="button insertItemButton">
+		<i></i><?php echo JText::_( 'COM_EASYBLOG_MM_INSERT_FILE' );?>
+		<span class="insertItemDetail"></span>
+	</button>
+</div>
+
+<div class="panelBody">
+
+	<div class="panelSection filePreviewPanel active">
+		<div class="panelSectionHeader">
+			<div class="panelSectionTitle"><i></i><?php echo JText::_( 'COM_EASYBLOG_MM_PREVIEW' );?></div>
+		</div>
+		<div class="panelSectionContent">
+			<div class="panelSectionCaption">
+				<i></i><span class="filePreviewCaption"><@= meta.title @></span>
+			</div>
+		</div>
+	</div>
+
+	<div class="panelSection imageInsertOptionsPanel active">
+		<div class="panelSectionHeader">
+			<div class="panelSectionTitle"><i></i><?php echo JText::_( 'COM_EASYBLOG_MM_INSERT_OPTIONS' );?></div>
+		</div>
+
+		<div class="panelSectionContent">
+			<ul class="reset-ul list-form">
+				<li>
+					<label><?php echo JText::_( 'COM_EASYBLOG_MM_LINK_TO' );?>:</label>
+					<select name="insertAs" class="insertAs">
+						<option value="newpage"><?php echo JText::_( 'COM_EASYBLOG_MM_A_NEW_PAGE' );?></option>
+						<option value="samepage"><?php echo JText::_( 'COM_EASYBLOG_MM_THE_SAME_PAGE' );?></option>
+					</select>
+				</li>
+				<li>
+					<label><?php echo JText::_( 'COM_EASYBLOG_MM_CAPTION' );?>:</label>
+					<textarea style="width:250px;height:80px" class="insertCaption"><@= meta.title @></textarea>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<?php if( $system->config->get( 'main_media_manager_panel_show_file_properties')){ ?>
+	<div class="panelSection filePropertiesPanel">
+		<div class="panelSectionHeader">
+			<div class="panelSectionTitle"><i></i><?php echo JText::_( 'COM_EASYBLOG_MM_FILE_PROPERTIES' );?></div>
+		</div>
+		<div class="panelSectionContent">
+			<ul class="reset-ul list-form">
+				<li>
+					<label><?php echo JText::_( 'COM_EASYBLOG_MM_FILE_SIZE' );?>:</label>
+					<strong class="itemFilesize"><@= meta.filesize @></strong>
+				</li>
+				<li>
+					<label><?php echo JText::_( 'COM_EASYBLOG_MM_EXTENSION_TYPE' );?>:</label>
+					<strong class="itemMime"><@= meta.mime @></strong>
+				</li>
+				<li>
+					<label><?php echo JText::_( 'COM_EASYBLOG_MM_UPLOADED_ON' );?>:</label>
+					<strong class="itemCreationDate"><@= meta.creationDate @></strong>
+				</li>
+				<li>
+					<label><?php echo JText::_( 'COM_EASYBLOG_URL' );?>:</label>
+					<strong class="itemUrl"><@= meta.url @></strong>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<?php } ?>
+</div>
+
+<div class="panelFooter">
+	<button type="button" class="button removeItemButton"><?php echo JText::_( 'COM_EASYBLOG_DELETE' );?></button>
+	<span class="footerText"><@= meta.filesize @></span>
+</div>

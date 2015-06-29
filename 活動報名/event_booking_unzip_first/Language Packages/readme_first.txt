@@ -1,0 +1,2 @@
+If you are using a different language from English, simply upload the corresponding language folder to language folder of your Joomla site . The language packages are contributed
+by Event Booking community.

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_DJCATALOG2_ITEM_VIEW">
+	</layout>
+	<fields name="request">
+		<fieldset name="request"
+		addfieldpath="/administrator/components/com_djcatalog2/models/fields"
+		 >
+			<field name="id" type="djitem" default="" label="COM_DJCATALOG2_ITEM" required="true" extension="com_djcatalog2"/>
+		</fieldset>
+	</fields>
+	<fields name="params">
+		<fieldset 
+		name="item-view" 
+		label="COM_DJCATALOG2_CONFIG_ITEM_VIEW_SETTINGS_LABEL">
+			<field name="show_category_name_item" type="list"  default="" label="COM_DJCATALOG2_CONFIG_SHOW_CATEGORY_NAME" description="COM_DJCATALOG2_CONFIG_SHOW_CATEGORY_NAME_DESC">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="2">COM_DJCATALOG2_CONFIG_TEXT</option>
+				<option value="1">COM_DJCATALOG2_CONFIG_LINK</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_HIDE</option>
+			</field>
+			<field name="show_producer_name_item" type="list"  default="" label="COM_DJCATALOG2_CONFIG_SHOW_PRODUCER_NAME" description="COM_DJCATALOG2_CONFIG_SHOW_PRODUCER_NAME_DESC">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="3">COM_DJCATALOG2_CONFIG_PRODUCER_LIGHTBOX</option>
+				<option value="2">COM_DJCATALOG2_CONFIG_TEXT</option>
+				<option value="1">COM_DJCATALOG2_CONFIG_PRODUCER_LINK</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_HIDE</option>
+			</field>
+			<field name="show_price_item" type="list"  default="" label="COM_DJCATALOG2_CONFIG_SHOW_PRICE" description="COM_DJCATALOG2_CONFIG_SHOW_PRICE_DESC">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="2">COM_DJCATALOG2_CONFIG_PRICE_ALWAYS</option>
+				<option value="1">COM_DJCATALOG2_CONFIG_PRICE_ONLY_IF_GTT0</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_HIDE</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

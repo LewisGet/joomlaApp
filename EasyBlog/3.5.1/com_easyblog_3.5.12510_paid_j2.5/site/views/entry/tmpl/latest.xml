@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_EASYBLOG_MENU_ENTRY_LATEST_LAYOUT">
+		<message>
+			<![CDATA[COM_EASYBLOG_MENU_ENTRY_LATEST_LAYOUT_DESC]]>
+		</message>
+		<view>entry</view>
+	</layout>
+	<state>
+		<name><![CDATA[COM_EASYBLOG_MENU_ENTRY_LATEST_LAYOUT]]></name>
+		<description><![CDATA[COM_EASYBLOG_MENU_ENTRY_LATEST_LAYOUT_DESC]]></description>
+		<params>
+		</params>
+	</state>
+	
+	<!-- Add fields to the request variables for the layout. -->
+	<fields name="request">
+	</fields>		
+</metadata>

@@ -1,0 +1,1 @@
+ALTER TABLE `#__easyblog_reports` ADD `ip` TEXT NOT NULL;

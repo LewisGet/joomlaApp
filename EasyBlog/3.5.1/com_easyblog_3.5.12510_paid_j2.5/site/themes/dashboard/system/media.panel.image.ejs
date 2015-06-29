@@ -1,0 +1,143 @@
+<?php
+/**
+* @package		EasyBlog
+* @copyright	Copyright (C) 2010 Stack Ideas Private Limited. All rights reserved.
+* @license		GNU/GPL, see LICENSE.php
+* EasyBlog is free software. This version may have been modified pursuant
+* to the GNU General Public License, and as distributed it includes or
+* is derivative of works licensed under the GNU General Public License or
+* other free or open source software licenses.
+* See COPYRIGHT.php for copyright notices and details.
+*/
+
+// Check to ensure this file is included in Joomla!
+defined('_JEXEC') or die( 'Restricted access' );
+?>
+<div class="panelHeader">
+	<button type="button" class="button insertItemButton">
+		<i></i><?php echo JText::_( 'COM_EASYBLOG_MM_INSERT_IMAGE' );?>
+		<span class="insertItemDetail"></span>
+	</button>
+</div>
+
+<div class="panelBody">
+
+	<div class="panelSection imagePreviewPanel active">
+		<div class="panelSectionHeader">
+			<div class="panelSectionTitle"><i></i><?php echo JText::_( 'COM_EASYBLOG_MM_PREVIEW' );?></div>
+		</div>
+		<div class="panelSectionContent">
+			<img class="imagePreview" />
+			<button class="imageZoomButton button"><i></i><?php echo JText::_( 'COM_EASYBLOG_MM_INSERT_ZOOM' );?></button>
+		</div>
+	</div>
+
+	<div class="panelSection imageVariationPanel active">
+		<div class="panelSectionHeader">
+			<div class="panelSectionTitle"><i></i><?php echo JText::_( 'COM_EASYBLOG_MM_IMAGE_VARIATION' );?></div>
+		</div>
+
+		<div class="panelSectionContent">
+			<div class="imageVariationList">
+				<div class="imageVariations busy">
+				</div>
+				<div class="imageVariationActions">
+					<button type="button" class="removeVariationButton"><i></i><?php echo JText::_( 'COM_EASYBLOG_REMOVE' );?></button>
+					<button type="button" class="addVariationButton"><i></i><?php echo JText::_( 'COM_EASYBLOG_MM_NEW_SIZE' );?></button>
+				</div>
+			</div>
+
+			<div class="imageVariationForm">
+				<form>
+					<div class="formGroup">
+						<label class="formLabel"><?php echo JText::_( 'COM_EASYBLOG_MM_NAME' );?></label>
+						<div class="formControl"><input type="text" class="imageSizeInput newVariationName"></div>
+					</div>
+					<div class="formGroup">
+						<label class="formLabel"><?php echo JText::_( 'COM_EASYBLOG_MM_WIDTH' );?></label>
+						<div class="formControl"><input type="text" class="imageSizeInput newVariationWidth"></div>
+					</div>
+					<div class="formGroup">
+						<label class="formLabel"><?php echo JText::_( 'COM_EASYBLOG_MM_HEIGHT' );?></label>
+						<div class="formControl"><input type="text" class="imageSizeInput newVariationHeight"></div>
+					</div>
+					<div class="newVariationRatio locked"></div>
+					<span class="imageVariationMessage"></span>
+				</form>
+				<div class="imageVariationActions">
+					<button class="backVariationButton" type="button"><i></i><?php echo JText::_( 'COM_EASYBLOG_BACK' );?></button>
+					<button class="createVariationButton" type="button"><i></i><?php echo JText::_( 'COM_EASYBLOG_CREATE' );?></button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="panelSection insertOptionsPanel active">
+		<div class="panelSectionHeader">
+			<div class="panelSectionTitle"><i></i><?php echo JText::_( 'COM_EASYBLOG_MM_INSERT_OPTIONS' );?></div>
+		</div>
+
+		<div class="panelSectionContent">
+			<ul class="reset-ul list-form">
+				<li class="field hide-field-content">
+					<input type="checkbox" class="imageCaptionOption" name="imageCaptionOption" />
+					<label><?php echo JText::_( 'COM_EASYBLOG_MM_ENABLE_IMAGE_CAPTION' );?></label>
+					<div class="field-content">
+						<input type="text" class="imageCaption" name="imageCaption" value="<@= meta.title @>" />
+					</div>
+				</li>
+				<li class="field hide-field-content">
+					<input type="checkbox" class="imageZoomOption" name="imageZoomOption" <?php echo ( $system->config->get( 'main_media_manager_image_panel_enable_lightbox' ) ) ? "checked" : ""; ?> />
+					<label><?php echo JText::_( 'COM_EASYBLOG_MM_ENABLE_IMAGE_ZOOMING' );?></label>
+					<div class="field-content">
+						<?php echo JText::_( 'COM_EASYBLOG_MM_USE_LARGE_IMAGE' );?>:
+						<select class="imageZoomLargeImageSelection"></select>
+					</div>
+				</li>
+				<li class="field hide-field-content">
+					<input type="checkbox" class="imageEnforceDimensionOption" name="imageEnforceDimension" <?php echo ( $system->config->get( 'main_media_manager_image_panel_enforce_image_dimension' ) ) ? "checked" : ""; ?> />
+					<label><?php echo JText::_( 'COM_EASYBLOG_MM_ENFORCE_IMAGE_DIMENSION' );?></label>
+					<div class="field-content">
+						<label style="width: 70px; text-align: right; padding: 0 5px; display: inline-block; line-height: 25px;"><?php echo JText::_( 'COM_EASYBLOG_MM_WIDTH' );?></label><input style="width: 80px; height: 15px;" type="text" class="imageEnforceWidth" name="imageEnforceWidth" value="<?php echo $system->config->get( 'main_media_manager_image_panel_enforce_image_width'); ?>" initial="<?php echo $system->config->get( 'main_media_manager_image_panel_enforce_image_width'); ?>" />
+						<br/>
+						<label style="width: 70px; text-align: right; padding: 0 5px; display: inline-block; line-height: 25px;"><?php echo JText::_( 'COM_EASYBLOG_MM_HEIGHT' );?></label><input style="width: 80px; height: 15px;" type="text" class="imageEnforceHeight" name="imageEnforceHeight" value="<?php echo $system->config->get( 'main_media_manager_image_panel_enforce_image_height'); ?>" initial="<?php echo $system->config->get( 'main_media_manager_image_panel_enforce_image_height'); ?>" />
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<?php if( $system->config->get( 'main_media_manager_panel_show_file_properties')){ ?>
+	<div class="panelSection filePropertiesPanel">
+		<div class="panelSectionHeader">
+			<div class="panelSectionTitle"><i></i><?php echo JText::_( 'COM_EASYBLOG_MM_FILE_PROPERTIES' );?></div>
+		</div>
+
+		<div class="panelSectionContent">
+			<ul class="reset-ul list-form">
+				<li>
+					<label><?php echo JText::_( 'COM_EASYBLOG_MM_FILE_SIZE' );?>:</label>
+					<strong class="itemFilesize"><@= meta.filesize @></strong>
+				</li>
+				<li>
+					<label><?php echo JText::_( 'COM_EASYBLOG_MM_EXTENSION_TYPE' );?>:</label>
+					<strong class="itemMime"><@= meta.mime @></strong>
+				</li>
+				<li>
+					<label><?php echo JText::_( 'COM_EASYBLOG_MM_UPLOADED_ON' );?>:</label>
+					<strong class="itemCreationDate"><@= meta.creationDate @></strong>
+				</li>
+				<li>
+					<label><?php echo JText::_( 'COM_EASYBLOG_URL' );?>:</label>
+					<strong class="itemUrl"><@= meta.url @></strong>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<?php } ?>
+</div>
+
+<div class="panelFooter">
+	<button type="button" class="removeItemButton"><?php echo JText::_( 'COM_EASYBLOG_DELETE' );?></button>
+	<span class="footerText"></span>
+</div>

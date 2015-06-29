@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.0" type="language" core="1" method="upgrade" client="both">
+	<name>Chinese(Traditional)</name>
+	<tag>zh-TW</tag>
+	<version>2.3.2.4</version>
+	<creationDate>27 March 2013</creationDate>
+	<author>Eddy Chang</author>
+	<authorEmail>eddy@joomla.org.tw</authorEmail>
+	<authorUrl>http://www.joomla.org.tw/</authorUrl>
+	<copyright>Copyright (C) 2006 - 2013 Ryan Demmer. All rights reserved</copyright>
+	<license>GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<description>Chinese(Traditional) language pack for JCE 2.x</description>
+	<site folder="language/zh-TW">
+		<file>zh-TW.com_jce.ini</file>	
+		<!-- // Subscription plugin language files // -->
+		<file>zh-TW.com_jce_caption.ini</file> 
+		<file>zh-TW.com_jce_emotions.ini</file>
+		<file>zh-TW.com_jce_filemanager.ini</file>
+		<file>zh-TW.com_jce_fullpage.ini</file>
+		<file>zh-TW.com_jce_iframe.ini</file>
+		<file>zh-TW.com_jce_imgmanager_ext.ini</file>
+		<file>zh-TW.com_jce_mediamanager.ini</file>
+		<file>zh-TW.com_jce_microdata.ini</file>
+		<file>zh-TW.com_jce_popups_rokbox.ini</file>
+		<file>zh-TW.com_jce_popups_widgetkit.ini</file>
+		<file>zh-TW.com_jce_templatemanager.ini</file>
+	</site>
+	<administration folder="administrator/language/zh-TW">
+		<file>zh-TW.com_jce.ini</file>
+		<file>zh-TW.com_jce.menu.ini</file>
+		<file>zh-TW.com_jce.sys.ini</file>
+		<file>zh-TW.plg_editors_jce.ini</file>
+		<file>zh-TW.plg_editors_jce.sys.ini</file>
+		<file>zh-TW.plg_quickicon_jcefilebrowser.ini</file>
+		<file>zh-TW.plg_quickicon_jcefilebrowser.sys.ini</file>
+		<file>zh-TW.plg_system_jcemediabox.ini</file>
+		<file>zh-TW.plg_system_jcemediabox.sys.ini</file>
+	</administration>
+	<tinymce folder="components/com_jce/editor/tiny_mce">
+		<file>themes/advanced/langs/zh.js</file>
+	</tinymce>
+</extension>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Standard Single Location Layout">
+		<message>
+			<![CDATA[STANDARD ARTICLE LAYOUT DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>Standard Location Layout</name>
+		<description>Standarad Location Layout</description>
+		<url addpath="/administrator/components/com_locator/elements">
+			<param name="id" type="location" default="0" label="Select Location" description="A location" />
+		</url>
+		<params>
+		</params>
+	</state>
+</metadata>

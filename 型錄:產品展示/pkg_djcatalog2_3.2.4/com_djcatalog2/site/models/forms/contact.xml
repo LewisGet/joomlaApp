@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset name="contact" label="COM_DJCATALOG2_FORM_LABEL">
+		<field name="contact_name"
+			type="text"
+			label="COM_DJCATALOG2_CONTACT_EMAIL_NAME_LABEL"
+			filter="string"
+			required="true"
+			size="40"
+			class="inputbox input-large"
+		/>
+		<field name="contact_email"
+			type="email"
+			label="COM_DJCATALOG2_EMAIL_LABEL"
+			filter="string"
+			required="true"
+			size="40"
+			class="inputbox input-large"
+		/>
+		<field name="contact_subject"
+			type="text"
+			label="COM_DJCATALOG2_CONTACT_MESSAGE_SUBJECT_LABEL"
+			filter="string"
+			required="true"
+			size="40"
+			class="inputbox input-large"
+		/>
+		<field name="contact_message"
+			type="textarea"
+			cols="50"
+			rows="10"
+			label="COM_DJCATALOG2_CONTACT_ENTER_MESSAGE_LABEL"
+			filter="htmlsafe"
+			required="true"
+			class="inputbox input-large"
+		/>
+		<field name="contact_email_copy"
+			type="checkbox"
+			id="contact-email-copy"
+			label="COM_DJCATALOG2_CONTACT_EMAIL_A_COPY_LABEL"
+			default="0"
+			class="checkbox inline"
+		/>
+
+	</fieldset>
+	<fieldset name="captcha">
+		<field
+			name="captcha"
+			type="captcha"
+			label="COM_DJCATALOG2_CAPTCHA_LABEL"
+			validate="captcha"
+			namespace="contact"
+		/>
+	</fieldset>
+</form>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Directory Import">
+		<message>
+			<![CDATA[Directory Import]]>
+		</message>
+	</layout>
+	<state>
+		<name>Directory Import</name>
+		<description>Directory Import</description>
+	</state>
+</metadata>

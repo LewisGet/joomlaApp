@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6">
+<name>Locator</name>
+<creationDate>12/07/2011</creationDate>
+<author>Michael Fatica</author>
+<copyright>Copyright 2011 Fatica Consulting L.L.C. All Rights Reserved</copyright>
+<authorEmail>mike@fatica.net</authorEmail>
+<authorUrl>http://www.fatica.net</authorUrl>
+<version>1.1017</version>
+<license>GPL</license>
+<description><![CDATA[ 
+Locator Component for Joomla 1.6! - Copyright 2010 Fatica Consulting L.L.C. All Rights Reserved
+]]></description>
+<installfile>install.com_locator.php</installfile>
+<install>
+	<sql>
+		<file driver="mysql" charset="utf8">install.mysql.utf8.sql</file>
+	</sql>
+</install>
+<files folder="site">
+	<filename>controller.php</filename>
+	<filename>locator.php</filename>
+	<filename>view.php</filename>
+	<filename>router.php</filename>
+	<folder>assets</folder>
+	<folder>helpers</folder>
+	<folder>models</folder>
+	<folder>views</folder>
+</files>
+<languages>
+	<language tag="en-GB">en-GB.com_locator.ini</language>
+	<language tag="de-DE">de-DE.com_locator.ini</language>
+	<language tag="es-ES">es-ES.com_locator.ini</language>
+	<language tag="fr-BE">fr-BE.com_locator.ini</language>
+	<language tag="nl-NL">nl-NL.com_locator.ini</language>
+</languages>
+<administration>
+ <menu img="components/com_locator/images/icon.png" task="admin">Locator</menu>
+  <submenu>
+  	<menu task="admin">COM_LOCATOR_MENU</menu>
+ 	<menu task="managefields">COM_LOCATOR_MENU_MANAGEFIELDS</menu>
+ 	<menu task="managetags">COM_LOCATOR_MENU_MANAGETAGS</menu>
+ 	<menu task="export">COM_LOCATOR_MENU_EXPORT</menu>
+ 	<menu task="import">COM_LOCATOR_MENU_IMPORT</menu>
+ </submenu>
+	<files folder="admin">
+		<folder>elements</folder>
+		<folder>views</folder>
+		<folder>images</folder>
+		<filename>install.mysql.utf8.sql</filename>
+		<filename>config.xml</filename>
+		<filename>admin.locator.html.php</filename>
+		<filename>admin.locator.php</filename>
+		<filename>controller.php</filename>
+		<filename>toolbar.locator.php</filename>
+		<filename>toolbar.locator.html.php</filename>
+		<filename>import.csv</filename>
+		<filename>recaptchalib.php</filename>
+	</files>
+	  <languages folder="admin">
+	      <language tag="en-GB">en-GB.com_locator.sys.ini</language>
+      </languages>
+</administration>
+</extension> 

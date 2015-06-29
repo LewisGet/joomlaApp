@@ -1,0 +1,1 @@
+ALTER TABLE `#__easyblog_drafts` ADD `image` TEXT NOT NULL;

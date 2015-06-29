@@ -1,0 +1,1 @@
+ALTER TABLE `#__easyblog_xml_wpdata` ADD `comments` LONGTEXT NULL;

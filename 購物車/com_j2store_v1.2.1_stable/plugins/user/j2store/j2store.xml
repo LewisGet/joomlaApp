@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="user" method="upgrade">
+	<name>User - J2Store</name>
+	<author>Sasi varna kumar</author>
+	<creationDate>Jan 2012</creationDate>
+	<copyright>(C) 2011-2016 Weblogicx India Private Limited</copyright>
+	<license>http://www.gnu.org/copyleft/lgpl.html GNU/LGPL</license>
+	<authorEmail>support@j2store.org</authorEmail>
+	<authorUrl>www.j2store.org</authorUrl>
+	<version>1.0</version>
+    <description>User plugin required for J2 Store.</description>
+	<files>
+		<filename plugin="j2store">j2store.php</filename>		
+	</files>
+
+</extension>

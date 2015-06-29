@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="template">
+	<name>Timeless</name>
+	<version>3.5</version>
+	<created>17/01/2012</created>
+	<updated>17/01/2012</updated>
+	<author>StackIdeas</author>
+	<description>Timeless displays a very nice calendar like icon on the blog post giving it a very elegant finishing. The difference between timeless and the rest of the theme is that it uses a mini calendar instead of an avatar.</description>
+	<params addpath="/administrator/components/com_easyblog/elements">
+		<param type="themes" name="parent" label="Parent Theme" description="Specify the parent theme here. If you have specified a theme here, EasyBlog will try to inherit template files from the specific theme." />
+		<param type="themes" name="parent_css" label="Parent CSS" description="If you would like to inherit the css from a particular theme, select the theme here." />
+		<param type="radio" name="show_headers_latestentries" label="Show latest entries in header" description="If enabled, the latest entries text will be displayed on the front page." default="1">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param type="radio" name="show_author" label="Show posted by" description="If enabled, the text posted by user is visible" default="1">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param type="radio" name="show_created_date" label="Show creation date" description="If enabled, the creation date will be displayed." default="1">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param type="list" name="creation_source" label="Posted Date Source" description="Select the creation date source to use when displaying the posted date" default="created">
+			<option value="created">Created</option>
+			<option value="modified">Last Modified</option>
+		</param>
+		<param type="radio" name="show_category" label="Show category" description="If enabled, the category will be displayed." default="1">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param type="radio" name="show_tags" label="Show Tags" description="If enabled, the tags will be displayed." default="1">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param type="list" name="tags_color_scheme" label="Tags Color Scheme" description="Set the color scheme for the tags." default="black">
+			<option value="black">Black</option>
+			<option value="orange">Orange</option>
+			<option value="grey">Grey</option>
+			<option value="blue">Blue</option>
+		</param>
+		<param type="radio" name="show_tags_frontpage" label="Show Tags on frontpage listings" description="If enabled, the tags will be displayed on the front page listings, provided the option 'Show Tags' above enabled as well." default="1">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param type="radio" name="show_hits" label="Show Hits" description="If enabled, the hit count will appear in the blog post." default="1">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param type="radio" name="show_comments" label="Show Comments link" description="If enabled, the comment link will appear in the blog post." default="1">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param type="radio" name="show_fontchanger" label="Show Font Resizer" description="If enabled, visitors will be able to increase or decrease font sizes." default="1">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param type="radio" name="show_blogger_filterbar" label="Show Blogger filter bar" description="If enabled, user can filter to show either all bloggers or only bloggers with posts when in frontend bloggers listing page." default="1">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+
+		<param type="radio" name="show_bloggerstats" label="Show Blogger Statistic" description="If enabled, blogger's statistic will be display next to blog entries in bloggers listing page." default="0">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param type="radio" name="show_bloggerstatsitem" label="Show Blogger's entries in Statistic" description="If enabled, blogger's entries will be display next to blogger statistic in bloggers listing page." default="0">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+
+		<param type="radio" name="show_categorystats" label="Show Category Statistic" description="If enabled, category's statistic will be display next to blog entries in categories listing page." default="1">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param type="radio" name="show_categorystatsitem" label="Show Category's entries in Statistic" description="If enabled, category's entries will be display next to category statistic in categories listing page." default="0">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+
+		<param type="radio" name="show_teamblogstats" label="Show TeamBlog Statistic" description="If enabled, teamblog's statistic will be display next to blog entries in teamblogs listing page." default="0">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param type="radio" name="show_teamblogstatsitem" label="Show TeamBlog's entries in Statistic" description="If enabled, teamblog's entries will be display next to teamblog statistic in teamblogs listing page." default="0">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+	</params>
+</install>

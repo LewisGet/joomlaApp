@@ -1,0 +1,38 @@
+<?php
+// Heading
+$_['heading_title']     = '搜尋';
+
+// Text
+$_['text_search']       = 'Products meeting the search criteria';
+$_['text_keyword']      = '關鍵字';
+$_['text_category']     = '所有分類';
+$_['text_sub_category'] = '搜尋子分類';
+$_['text_critea']       = '搜尋條件';
+$_['text_empty']        = 'There is no product that matches the search criteria.';
+$_['text_quantity']     = '數量：';
+$_['text_manufacturer'] = '廠牌：';
+$_['text_model']        = '產品代碼：'; 
+$_['text_points']       = '紅利點數：'; 
+$_['text_price']        = '價格：'; 
+$_['text_tax']          = 'Ex Tax:'; 
+$_['text_reviews']      = 'Based on %s reviews.'; 
+$_['text_compare']      = '產品比較 (%s)'; 
+$_['text_display']      = '顯示：';
+$_['text_list']         = '清單';
+$_['text_grid']         = '方格';
+$_['text_sort']         = '排序方式：';
+$_['text_default']      = '預設值';
+$_['text_name_asc']     = '名稱 (A - Z)';
+$_['text_name_desc']    = '名稱 (Z - A)';
+$_['text_price_asc']    = '價格 (低 &gt; 高)';
+$_['text_price_desc']   = '價格 (高 &gt; 低 )';
+$_['text_rating_asc']   = '評分 (最小值)';
+$_['text_rating_desc']  = '評分 (最大值)';
+$_['text_model_asc']    = '型號 (A - Z)';
+$_['text_model_desc']   = '型號 (Z - A)';
+$_['text_limit']        = '顯示：';
+
+// Entry
+$_['entry_search']      = '搜尋：';
+$_['entry_description'] = 'Search in product descriptions';
+?>

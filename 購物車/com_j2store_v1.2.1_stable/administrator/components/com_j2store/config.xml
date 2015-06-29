@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+
+	<fieldset name="COM_J2STORE_BASIC_OPTIONS" label="J2STORE_BASIC_OPTIONS">
+
+		<field name="j2store_enable_css" type="radio" default="1"
+			label="j2store_conf_j2store_enable_css_label" description="j2store_conf_j2store_enable_css_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+
+		<field name="show_quicktips" type="list" default="1"
+			label="j2store_conf_show_quicktips_label" 
+			description="j2store_conf_show_quicktips_desc">
+			<option value="1">J2STORE_YES</option>
+			<option value="0">J2STORE_NO</option>
+		</field>
+
+		<field name="isregister" type="list" default="0"
+			label="j2store_conf_isregister_label" 
+			description="j2store_conf_isregister_desc">
+			<option value="1">J2STORE_YES</option>
+			<option value="0">J2STORE_NO</option>
+		</field>
+
+		<field name="usesecure" type="radio" default="0"
+			label="j2store_conf_usesecure_label" 
+			description="j2store_conf_usesecure_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+
+		<field name="attachmentfolderpath" type="text" default="" size="40"
+			label="j2store_conf_attachmentfolderpath_label" 
+			description="j2store_conf_attachmentfolderpath_desc" />
+			
+			<field name="backupfolderpath" type="text" default="" size="40"
+			label="j2store_conf_backupfolderpath_label" 
+			description="j2store_conf_backupfolderpath_desc" />
+	</fieldset>
+
+	<fieldset name="COM_J2STORE_CART_SETTINGS" label="J2STORE_CART_SETTINGS">
+
+
+		<field name="show_addtocart" type="list" default="0"
+			label="j2store_conf_show_addtocart_label" 
+			description="j2store_conf_show_addtocart_desc">
+			<option value="1">J2STORE_YES</option>
+			<option value="0">J2STORE_NO</option>
+		</field>
+
+
+		<field name="show_thumb_cart" type="list" default="intro"
+			label="j2store_conf_show_thumb_cart_label" 
+			description="j2store_conf_show_thumb_cart_desc">
+			<option value="within_text">j2store_conf_image_within_article</option>
+			<option value="intro">j2store_conf_intro_Image</option>
+			<option value="fulltext">j2store_conf_full_article_image</option>
+			<option value="0">j2store_conf_never_show_thumbnail</option>
+		</field>
+
+		<field name="cartimage_size" type="list" default="Small"
+			label="j2store_conf_cartimage_size_label" 
+			description="j2store_conf_cartimage_size_desc">
+			<option value="Small">J2STORE_CONF_CARTIMAGE_SIZE_SMALL</option>
+			<option value="Medium">J2STORE_CONF_CARTIMAGE_SIZE_MEDIUM</option>
+			<option value="Large">J2STORE_CONF_CARTIMAGE_SIZE_LARGE</option>
+		</field>
+
+
+		<field name="show_tax_total" type="list" default="1"
+			label="j2store_conf_show_tax_total_label" 
+			description="j2store_conf_show_tax_total_desc">
+			<option value="1">J2STORE_YES</option>
+			<option value="0">J2STORE_NO</option>
+		</field>
+
+		<field name="price_display_options" type="list" default="1"
+			label="j2store_conf_price_display_options_label" 
+			description="j2store_conf_price_display_options_desc">
+			<option value="1">J2STORE_CONFIG_PRICE_ONLY</option>
+			<option value="2">J2STORE_CONFIG_PRICE_PLUS_TAX</option>
+			<option value="3">J2STORE_CONFIG_PRICE_AND_TAX_SEPARATE</option>
+		</field>
+
+		<field name="show_billing_address" type="list" default="1"
+			label="j2store_conf_show_billing_address_label" 
+			description="j2store_conf_show_billing_address_desc">
+			<option value="1">J2STORE_YES</option>
+			<option value="0">J2STORE_NO</option>
+		</field>
+
+		<field name="show_shipping_address" type="list" default="1"
+			label="j2store_conf_show_shipping_address_label" 
+			description="j2store_conf_show_shipping_address_desc">
+			<option value="1">J2STORE_YES</option>
+			<option value="0">J2STORE_NO</option>
+		</field>
+
+
+		<field name="allow_guest_checkout" type="radio" default="0"
+			label="j2store_conf_allow_guest_checkout_label" 
+			description="j2store_conf_allow_guest_checkout_desc">
+			<option value="0">J2STORE_NO</option>
+			<option value="1">J2STORE_YES</option>
+		</field>
+		
+		<field name="popup_style" type="radio" default="1"
+			label="j2store_conf_popup_style_label" 
+			description="j2store_conf_popup_style_desc">
+			<option value="1">J2STORE_CONF_OPTION_DETAILED</option>
+			<option value="2">J2STORE_CONF_OPTION_SMALL</option>			
+			<option value="3">J2STORE_CONF_OPTION_REDIRECT</option>
+		</field>
+		
+		<field name="popup_size_width" type="text" default="600" size="5"
+			label="j2store_conf_popup_size_width_label" 
+			description="j2store_conf_popup_size_width_desc" />
+		
+		<field name="popup_size_height" type="text" default="450" size="5"
+			label="j2store_conf_popup_size_height_label" 
+			description="j2store_conf_popup_size_height_desc" />
+		
+		
+
+	</fieldset>
+
+	<fieldset name="COM_J2STORE_ADRESS_FIELDS" label="J2STORE_ADDRESS_FIELDS">
+
+		<field name="billing" type="spacer" class="spacer"
+			label="j2store_conf_billing_label" />
+
+		<field name="bill_lname" type="radio" default="1" label="j2store_conf_bill_lname_label"
+			description="j2store_conf_bill_lname_desc">
+			<option value="1">j2store_conf_required</option>
+			<option value="2">j2store_conf_optional</option>
+			<option value="3">j2store_conf_disable</option>
+		</field>
+
+		<field name="bill_addr_line1" type="radio" default="1"
+			label="j2store_conf_bill_addr_line1_label" 
+			description="j2store_conf_bill_addr_line1_desc">
+			<option value="1">j2store_conf_required</option>
+			<option value="2">j2store_conf_optional</option>
+		</field>
+
+		<field name="bill_addr_line2" type="radio" default="2"
+			label="j2store_conf_bill_addr_line2_label" 
+			description="j2store_conf_bill_addr_line2_desc">
+			<option value="1">j2store_conf_required</option>
+			<option value="2">j2store_conf_optional</option>
+			<option value="3">j2store_conf_disable</option>
+		</field>
+
+		<field name="bill_zip" type="radio" default="1" 
+			label="j2store_conf_bill_zip_label"
+			description="j2store_conf_bill_zip_desc">
+			<option value="1">j2store_conf_required</option>
+			<option value="2">j2store_conf_optional</option>
+			<option value="3">j2store_conf_disable</option>
+		</field>
+
+		<field name="bill_city" type="radio" default="1" 
+			label="j2store_conf_bill_city_label"
+			description="j2store_conf_bill_city_desc">
+			<option value="1">j2store_conf_required</option>
+			<option value="2">j2store_conf_optional</option>
+			<option value="3">j2store_conf_disable</option>
+		</field>
+
+		<field name="bill_country_zone" type="radio" default="1"
+			label="j2store_conf_bill_country_zone_label"
+			 description="j2store_conf_bill_country_zone_desc">
+			<option value="1">j2store_conf_required</option>
+			<option value="2">j2store_conf_optional</option>
+			<option value="3">j2store_conf_disable</option>
+		</field>
+
+		<field name="bill_phone1" type="radio" default="2" 
+		label="j2store_conf_bill_phone1_label"
+			description="j2store_conf_bill_phone1_desc">
+			<option value="1">j2store_conf_required</option>
+			<option value="2">j2store_conf_optional</option>
+			<option value="3">j2store_conf_disable</option>
+		</field>
+
+		<field name="bill_phone2" type="radio" default="1" 
+		label="j2store_conf_bill_phone2_label"
+			description="j2store_conf_bill_phone2_desc">
+			<option value="1">j2store_conf_required</option>
+			<option value="2">j2store_conf_optional</option>
+			<option value="3">j2store_conf_disable</option>
+		</field>
+
+		<field name="shipping" type="spacer" class="spacer"
+			label="j2store_conf_shipping_label" />
+		<field name="ship_lname" type="radio" default="1" 
+		label="j2store_conf_ship_lname_label"
+			description="j2store_conf_ship_lname_desc">
+			<option value="1">j2store_conf_required</option>
+			<option value="2">j2store_conf_optional</option>
+			<option value="3">j2store_conf_disable</option>
+		</field>
+
+		<field name="ship_addr_line1" type="radio" default="1"
+			label="j2store_conf_ship_addr_line1_label" 
+			description="j2store_conf_ship_addr_line1_desc">
+			<option value="1">j2store_conf_required</option>
+			<option value="2">j2store_conf_optional</option>
+		</field>
+
+		<field name="ship_addr_line2" type="radio" default="2"
+			label="j2store_conf_ship_addr_line2_label" 
+			description="j2store_conf_ship_addr_line2_desc">
+			<option value="1">j2store_conf_required</option>
+			<option value="2">j2store_conf_optional</option>
+			<option value="3">j2store_conf_disable</option>
+		</field>
+
+		<field name="ship_zip" type="radio" default="1"
+		 label="j2store_conf_ship_zip_label"
+			description="j2store_conf_ship_zip_desc">
+			<option value="1">j2store_conf_required</option>
+			<option value="2">j2store_conf_optional</option>
+			<option value="3">j2store_conf_disable</option>
+		</field>
+
+		<field name="ship_city" type="radio" default="1" 
+		label="j2store_conf_ship_city_label"
+			description="j2store_conf_ship_city_desc">
+			<option value="1">j2store_conf_required</option>
+			<option value="2">j2store_conf_optional</option>
+			<option value="3">j2store_conf_disable</option>
+		</field>
+
+		<field name="ship_country_zone" type="radio" default="1"
+			label="j2store_conf_ship_country_zone_label"
+			 description="j2store_conf_ship_country_zone_desc">
+			<option value="1">j2store_conf_required</option>
+			<option value="2">j2store_conf_optional</option>
+			<option value="3">j2store_conf_disable</option>
+		</field>
+
+		<field name="ship_phone1" type="radio" default="2"
+		 label="j2store_conf_ship_phone1_label"
+			description="j2store_conf_ship_phone1_desc">
+			<option value="1">j2store_conf_required</option>
+			<option value="2">j2store_conf_optional</option>
+			<option value="3">j2store_conf_disable</option>
+		</field>
+
+		<field name="ship_phone2" type="radio" default="1" 
+		label="j2store_conf_ship_phone2_label"
+			description="j2store_conf_ship_phone2_desc">
+			<option value="1">j2store_conf_required</option>
+			<option value="2">j2store_conf_optional</option>
+			<option value="3">j2store_conf_disable</option>
+		</field>
+
+	</fieldset>
+
+	<fieldset name="COM_J2STORE_DISCOUNT_SETTINGS" label="J2STORE_DISCOUNT_SETTINGS">
+
+		<field name="global_discount" type="text" size="20" default=""
+			label="j2store_conf_global_discount_label" 
+			description="j2store_conf_global_discount_desc" />
+		<field name="global_minordervalue" type="text" size="20"
+			default="" label="j2store_conf_global_minordervalue_label"
+			description="j2store_conf_global_minordervalue_desc" />
+
+	</fieldset>
+	<fieldset name="COM_J2STORE_NUMERIC_SETTINGS" label="J2STORE_NUMERIC_SETTINGS">
+
+		<field name="date_format" type="text" size="40" default="Y-m-d H:i:s"
+			label="j2store_conf_date_format_label" 
+			description="j2store_conf_date_format_desc" />
+		<field name="currency" type="text" size="40" default="$"
+			label="j2store_conf_currency_label" 
+			description="j2store_conf_currency_desc" />
+		<field name="currency_position" type="list" size="2" default="pre"
+			label="j2store_conf_currency_position_label" 
+			description="j2store_conf_currency_position_desc">
+			<option value="pre">j2store_conf_currency_pos_front</option>
+			<option value="post">j2store_conf_currency_pos_end</option>
+		</field>
+
+		<field name="currency_code" type="text" size="40" default="USD"
+			label="j2store_conf_currency_code_label" 
+			description="j2store_conf_currency_code_desc" />
+		<field name="currency_num_decimals" type="text" size="40"
+			default="2" label="j2store_conf_currency_num_decimals_label" 
+			description="j2store_conf_currency_num_decimals_desc" />
+		<field name="currency_decimal" type="text" size="40" default="."
+			label="j2store_conf_currency_decimal_label" 
+			description="j2store_conf_currency_decimal_desc" />
+		<field name="currency_thousands" type="text" size="20" default=","
+			label="j2store_conf_currency_thousands_label" 
+			description="j2store_conf_currency_thousands_desc" />
+
+	</fieldset>
+	<fieldset name="COM_J2STORE_SHOP_SETTINGS" label="J2STORE_SHOP_SETTINGS">
+
+		<field name="emails_defaultemail" type="text" size="40"
+			default="yourfrom@email.com" 
+			label="j2store_conf_emails_defaultemail_label"
+			description="j2store_conf_emails_defaultemail_desc" />
+			
+		<field name="emails_defaultname" type="text" size="40"
+			default="Your From Name" 
+			label="j2store_conf_emails_defaultname_label" 
+			description="j2store_conf_emails_defaultname_desc" />
+
+		<field name="admin_email" type="text" size="40" default="youradmin@email.com"
+			label="j2store_conf_admin_email_label" 
+			description="j2store_conf_admin_email_desc" />
+
+
+		<field name="shopname" type="text" size="40" default="My Shop"
+			label="j2store_conf_shopname_label" 
+			description="j2store_conf_shopname_desc" />
+
+		<field name="signature" type="textarea" rows="5" cols="40"
+			default="Administrator, My Shop" 
+			label="j2store_conf_signature_label"
+			description="j2store_conf_signature_desc" />
+
+	</fieldset>
+
+	<fieldset name="COM_J2STORE_MISC_SETTINGS" label="J2STORE_MISC_SETTINGS">
+
+		<field name="show_title" type="list" default="1"
+			label="j2store_conf_show_title_label" 
+			description="j2store_conf_show_title_desc">
+			<option value="1">J2STORE_YES</option>
+			<option value="0">J2STORE_NO</option>
+		</field>
+		<field name="termsid" type="text" size="20" default=""
+			label="j2store_conf_termsid_label"
+			description="j2store_conf_termsid_desc" />
+
+	</fieldset>
+</config>

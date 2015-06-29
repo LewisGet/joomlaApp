@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<config>
+		<fieldset 
+		name="global" 
+		label="COM_DJCATALOG2_CONFIG_GLOBAL_SETTINGS_LABEL"
+		addfieldpath="/administrator/components/com_djcatalog2/models/fields">
+			<field name="theme" type="djtheme" default="default" label="COM_DJCATALOG2_CONFIG_THEME" description="COM_DJCATALOG2_CONFIG_THEME_DESC" />
+			
+			<field name="show_contact_form" default="1" type="list" label="COM_DJCATALOG2_CONFIG_CONTACT_FORM" description="COM_DJCATALOG2_CONFIG_CONTACT_FORM_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			<field name="contact_list" default="" type="textarea" label="COM_DJCATALOG2_CONFIG_CONTACT_LIST" description="COM_DJCATALOG2_CONFIG_CONTACT_LIST_DESC" rows="5" cols="20" />
+			<field name="price_restrict" default="0" type="list" label="COM_DJCATALOG2_CONFIG_PRICE_RESTRICTION" description="COM_DJCATALOG2_CONFIG_PRICE_RESTRICTION_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			<field name="price_unit" type="text" default="$" label="COM_DJCATALOG2_CONFIG_PRICE_UNIT" description="COM_DJCATALOG2_CONFIG_PRICE_UNIT_DESC" size="30" menu="hide"/>
+			<field name="thousand_separator" type="list"  default="0" label="COM_DJCATALOG2_CONFIG_THOUSAND_SEPARATOR" description="COM_DJCATALOG2_CONFIG_THOUSAND_SEPARATOR_DESC" menu="hide">
+				<option value="0">COM_DJCATALOG2_CONFIG_NONE</option>
+				<option value="1">COM_DJCATALOG2_CONFIG_SPACE</option>
+				<option value="2">COM_DJCATALOG2_CONFIG_APOSTROPHE</option>
+				<option value="3">COM_DJCATALOG2_CONFIG_COMMA</option>
+				<option value="4">COM_DJCATALOG2_CONFIG_PERIOD</option>
+			</field>
+			<field name="decimal_separator" type="list"  default="0" label="COM_DJCATALOG2_CONFIG_DECIMAL_SEPARATOR" description="COM_DJCATALOG2_CONFIG_DECIMAL_SEPARATOR_DESC" menu="hide">
+				<option value="0">COM_DJCATALOG2_CONFIG_COMMA</option>
+				<option value="1">COM_DJCATALOG2_CONFIG_PERIOD</option>
+			</field>
+			<field name="decimals" type="list"  default="2" label="COM_DJCATALOG2_CONFIG_DECIMALS" description="COM_DJCATALOG2_CONFIG_DECIMALS_DESC" menu="hide">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+			</field>
+			<field name="unit_side" type="list"  default="1" label="COM_DJCATALOG2_CONFIG_PRICE_UNIT_SIDE" menu="hide">
+				<option value="1">COM_DJCATALOG2_CONFIG_RIGHT</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_LEFT</option>
+			</field>
+			<field name="social_code" default="" type="textarea" filter="raw" label="COM_DJCATALOG2_CONFIG_SOCIAL_CODE" description="COM_DJCATALOG2_CONFIG_SOCIAL_CODE_DESC" rows="5" cols="20" />
+			<field name="social_code_position" default="bottom" type="list" label="COM_DJCATALOG2_CONFIG_SOCIAL_CODE_POSITION" description="COM_DJCATALOG2_CONFIG_SOCIAL_CODE_POSITION_DESC">
+				<option value="top">COM_DJCATALOG2_CONFIG_TOP</option>
+				<option value="aft_title">COM_DJCATALOG2_CONFIG_AFTER_TITLE</option>
+				<option value="aft_desc">COM_DJCATALOG2_CONFIG_AFTER_CONTENT</option>
+				<option value="bottom">COM_DJCATALOG2_CONFIG_BOTTOM</option>
+			</field>
+			<field name="social_code_views" type="checkboxes" label="COM_DJCATALOG2_CONFIG_SOCIAL_CODE_VIEWS" description="COM_DJCATALOG2_CONFIG_SOCIAL_CODE_VIEWS_DESC">
+				<option value="item">COM_DJCATALOG2_CONFIG_PRODUCT_PAGE</option>
+				<option value="category">COM_DJCATALOG2_CONFIG_CATEGORY_PAGE</option>
+				<option value="producer">COM_DJCATALOG2_CONFIG_PRODUCER_PAGE</option>
+			</field>
+			<field name="comments" default="0" type="list" label="COM_DJCATALOG2_CONFIG_COMMENTS">
+				<option value="0">JNONE</option>
+				<option value="1">Facebook</option>
+				<option value="2">DISQUS</option>
+			</field>
+			<field name="disqus_shortname" default="" type="text" label="COM_DJCATALOG2_CONFIG_DISQUS_SHORTNAME" description="COM_DJCATALOG2_CONFIG_DISQUS_SHORTNAME_DESC" />
+			<field name="show_footer" type="list"  default="0" label="COM_DJCATALOG2_CONFIG_SHOW_FOOTER" description="COM_DJCATALOG2_CONFIG_SHOW_FOOTER_DESC"  menu="hide">
+				<option value="1">COM_DJCATALOG2_CONFIG_YES</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_NO</option>
+			</field>
+		</fieldset>
+		<fieldset 
+		name="category-view-category" 
+		label="COM_DJCATALOG2_CONFIG_CATEGORY_VIEW_CATEGORY_SETTINGS_LABEL">
+			<field name="product_catalogue" type="list"  default="0" label="COM_DJCATALOG2_CONFIG_PRODUCT_CATALOGUE" description="COM_DJCATALOG2_CONFIG_PRODUCT_CATALOGUE_DESC">
+				<option value="1">COM_DJCATALOG2_CONFIG_YES</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_NO</option>
+			</field>
+			<field name="showcatdesc" default="1" label="COM_DJCATALOG2_CONFIG_SHOW_CATEGORY" description="COM_DJCATALOG2_CONFIG_SHOW_CATEGORY_DESC" type="list" >
+				<option value="0">COM_DJCATALOG2_CONFIG_HIDE</option>
+				<option value="1">COM_DJCATALOG2_CONFIG_SHOW</option>
+			</field>
+			<field name="showsubcategories_label" default="1" label="COM_DJCATALOG2_CONFIG_SHOW_SUB_CATEGORIES_HEADER" description="COM_DJCATALOG2_CONFIG_SHOW_SUB_CATEGORIES_HEADER_DESC" type="list" >
+				<option value="0">COM_DJCATALOG2_CONFIG_HIDE</option>
+				<option value="1">COM_DJCATALOG2_CONFIG_SHOW</option>
+			</field>
+			<field name="showsubcategories" default="1" label="COM_DJCATALOG2_CONFIG_SHOW_SUB_CATEGORIES" description="COM_DJCATALOG2_CONFIG_SHOW_SUB_CATEGORIES_DESC" type="list" >
+				<option value="0">COM_DJCATALOG2_CONFIG_HIDE</option>
+				<option value="1">COM_DJCATALOG2_CONFIG_SHOW</option>
+			</field>
+			<field name="category_columns" type="text" default="2" label="COM_DJCATALOG2_CONFIG_SUB_CATEGORIES_COLUMNS" description="COM_DJCATALOG2_CONFIG_SUB_CATEGORIES_COLUMNS_DESC" menu="hide" />
+			<field name="category_show_intro" type="list"  default="1" label="COM_DJCATALOG2_CONFIG_SHOW_SUB_CATEGORY_INTRO_DESCRIPTION" description="COM_DJCATALOG2_CONFIG_SHOW_SUB_CATEGORY_INTRO_DESCRIPTION_DESC" >
+				<option value="1">COM_DJCATALOG2_CONFIG_SHOW</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_HIDE</option>
+			</field>
+			<field name="category_intro_trunc" type="list"  default="0" label="COM_DJCATALOG2_CONFIG_SHOW_SUB_CATEGORY_INTRO_DESCRIPTION_TRUNCATE" description="COM_DJCATALOG2_CONFIG_SHOW_SUB_CATEGORY_INTRO_DESCRIPTION_TRUNCATE_DESC" >
+				<option value="1">COM_DJCATALOG2_CONFIG_YES</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_NO</option>
+			</field>
+			<field name="category_intro_length" type="text" default="0" label="COM_DJCATALOG2_CONFIG_SHOW_SUB_CATEGORY_INTRO_DESCRIPTION_LENGTH" description="COM_DJCATALOG2_CONFIG_SHOW_SUB_CATEGORY_INTRO_DESCRIPTION_LENGTH_DESC" menu="hide"/>
+			<field name="image_link_subcategory" default="0" label="COM_DJCATALOG2_CONFIG_SHOW_SUB_CATEGORY_IMAGE_BEHAVIOR" description="COM_DJCATALOG2_CONFIG_SHOW_SUB_CATEGORY_IMAGE_BEHAVIOR_DESC" type="list"  menu="hide">
+				<option value="0">COM_DJCATALOG2_CONFIG_REDIRECT</option>
+				<option value="1">COM_DJCATALOG2_CONFIG_LIGHTBOX</option>
+			</field>
+			<field name="showreadmore_subcategory" default="1" label="COM_DJCATALOG2_CONFIG_SHOW_SUB_CATEGORY_READMORE" description="COM_DJCATALOG2_CONFIG_SHOW_SUB_CATEGORY_READMORE_DESC" type="list" >
+				<option value="0">COM_DJCATALOG2_CONFIG_HIDE</option>
+				<option value="1">COM_DJCATALOG2_CONFIG_SHOW</option>
+			</field>
+		</fieldset>
+		<fieldset 
+		name="category-view-items" 
+		label="COM_DJCATALOG2_CONFIG_CATEGORY_VIEW_ITEMS_SETTINGS_LABEL">
+			<field name="limit_items_show" type="list"  label="COM_DJCATALOG2_CONFIG_CATEGORY_PAGINATION" description="COM_DJCATALOG2_CONFIG_CATEGORY_PAGINATION_DESC" default="8">
+				<option value="0">COM_DJCATALOG2_CONFIG_CATEGORY_PAGINATION_ALL</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="12">12</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="18">18</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="24">24</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+				<option value="30">30</option>
+				<option value="40">40</option>
+				<option value="50">50</option>
+				<option value="60">60</option>
+				<option value="70">70</option>
+				<option value="80">80</option>
+				<option value="90">90</option>
+				<option value="100">100</option>
+			</field>
+			<field name="list_layout" type="list" default="items" label="COM_DJCATALOG2_CONFIG_LIST_LAYOUT" description="COM_DJCATALOG2_CONFIG_LIST_LAYOUT_DESC">
+				<option value="items">COM_DJCATALOG2_CONFIG_LIST_LAYOUT_ITEMS</option>
+				<option value="table">COM_DJCATALOG2_CONFIG_LIST_LAYOUT_TABLE</option>
+			</field>
+			<field name="items_columns" type="text" default="2" label="COM_DJCATALOG2_CONFIG_PRODUCTS_COLUMNS" description="COM_DJCATALOG2_CONFIG_PRODUCTS_COLUMNS_DESC" menu="hide" />
+			<field name="items_default_order" type="list" default="i.ordering" label="COM_DJCATALOG2_CONFIG_DEFAULT_ORDER" description="COM_DJCATALOG2_CONFIG_DEFAULT_ORDER_DESC">
+				<option value="i.ordering">COM_DJCATALOG2_CONFIG_ORDER_ORDERING</option>
+				<option value="i.name">COM_DJCATALOG2_CONFIG_ORDER_NAME</option>
+				<option value="i.price">COM_DJCATALOG2_CONFIG_ORDER_PRICE</option>
+				<option value="category">COM_DJCATALOG2_CONFIG_ORDER_CATEGORY</option>
+				<option value="producer">COM_DJCATALOG2_CONFIG_ORDER_PRODUCER</option>
+				<option value="i.id">COM_DJCATALOG2_CONFIG_ORDER_ID</option>
+				<option value="i.created">COM_DJCATALOG2_CONFIG_ORDER_DATE</option>
+			</field>
+			<field name="items_default_order_dir" type="list" default="i.ordering" label="COM_DJCATALOG2_CONFIG_DEFAULT_ORDER_DIR" description="COM_DJCATALOG2_CONFIG_DEFAULT_ORDER_DIR_DESC">
+				<option value="asc">COM_DJCATALOG2_CONFIG_ORDER_ASC</option>
+				<option value="desc">COM_DJCATALOG2_CONFIG_ORDER_DESC</option>
+			</field>
+			<field name="featured_only" type="list" default="0" label="COM_DJCATALOG2_CONFIG_FEATURED_ONLY" >
+				<option value="0">COM_DJCATALOG2_CONFIG_NO</option>
+				<option value="1">COM_DJCATALOG2_CONFIG_YES</option>
+			</field>
+			<field name="featured_first" type="list" default="0" label="COM_DJCATALOG2_CONFIG_FEATURED_FIRST" >
+				<option value="0">COM_DJCATALOG2_CONFIG_NO</option>
+				<option value="1">COM_DJCATALOG2_CONFIG_YES</option>
+			</field>
+			<field name="show_category_filter" type="list"  default="1" label="COM_DJCATALOG2_CONFIG_SHOW_CATEGORY_FILTER" description="COM_DJCATALOG2_CONFIG_SHOW_CATEGORY_FILTER_DESC" >
+				<option value="1">COM_DJCATALOG2_CONFIG_SHOW</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_HIDE</option>
+			</field>
+			<field name="show_producer_filter" type="list"  default="1" label="COM_DJCATALOG2_CONFIG_SHOW_PRODUCER_FILTER" description="COM_DJCATALOG2_CONFIG_SHOW_PRODUCER_FILTER_DESC" >
+				<option value="1">COM_DJCATALOG2_CONFIG_SHOW</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_HIDE</option>
+			</field>
+			<field name="show_search" type="list"  default="1" label="COM_DJCATALOG2_CONFIG_SHOW_SEARCH_FILTER" description="COM_DJCATALOG2_CONFIG_SHOW_SEARCH_FILTER_DESC" >
+				<option value="1">COM_DJCATALOG2_CONFIG_SHOW</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_HIDE</option>
+			</field>
+			<field name="show_atoz_filter" type="list"  default="1" label="COM_DJCATALOG2_CONFIG_SHOW_ATOZ_FILTER" description="COM_DJCATALOG2_CONFIG_SHOW_ATOZ_FILTER_DESC" >
+				<option value="1">COM_DJCATALOG2_CONFIG_SHOW</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_HIDE</option>
+			</field>
+			<field name="show_category_orderby" type="list"  default="1" label="COM_DJCATALOG2_CONFIG_SHOW_CATEGORY_ORDER" description="COM_DJCATALOG2_CONFIG_SHOW_CATEGORY_ORDER_DESC" >
+				<option value="1">COM_DJCATALOG2_CONFIG_SHOW</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_HIDE</option>
+			</field>
+			<field name="show_producer_orderby" type="list"  default="1" label="COM_DJCATALOG2_CONFIG_SHOW_PRODUCER_ORDER" description="COM_DJCATALOG2_CONFIG_SHOW_PRODUCER_ORDER_DESC" >
+				<option value="1">COM_DJCATALOG2_CONFIG_SHOW</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_HIDE</option>
+			</field>
+			<field name="show_name_orderby" type="list"  default="1" label="COM_DJCATALOG2_CONFIG_SHOW_NAME_ORDER" description="COM_DJCATALOG2_CONFIG_SHOW_NAME_ORDER_DESC" >
+				<option value="1">COM_DJCATALOG2_CONFIG_SHOW</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_HIDE</option>
+			</field>
+			<field name="show_price_orderby" type="list"  default="1" label="COM_DJCATALOG2_CONFIG_SHOW_PRICE_ORDER" description="COM_DJCATALOG2_CONFIG_SHOW_PRICE_ORDER_DESC" >
+				<option value="1">COM_DJCATALOG2_CONFIG_SHOW</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_HIDE</option>
+			</field>
+			<field name="show_date_orderby" type="list"  default="1" label="COM_DJCATALOG2_CONFIG_SHOW_DATE_ORDER" description="COM_DJCATALOG2_CONFIG_SHOW_DATE_ORDER_DESC" >
+				<option value="1">COM_DJCATALOG2_CONFIG_SHOW</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_HIDE</option>
+			</field>
+			<field name="show_category_name" type="list"  default="1" label="COM_DJCATALOG2_CONFIG_SHOW_CATEGORY_NAME" description="COM_DJCATALOG2_CONFIG_SHOW_CATEGORY_NAME_DESC" >
+				<option value="2">COM_DJCATALOG2_CONFIG_TEXT</option>
+				<option value="1">COM_DJCATALOG2_CONFIG_LINK</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_HIDE</option>
+			</field>
+			<field name="show_producer_name" type="list"  default="3" label="COM_DJCATALOG2_CONFIG_SHOW_PRODUCER_NAME" description="COM_DJCATALOG2_CONFIG_SHOW_PRODUCER_NAME_DESC">
+				<option value="3">COM_DJCATALOG2_CONFIG_PRODUCER_LIGHTBOX</option>
+				<option value="2">COM_DJCATALOG2_CONFIG_TEXT</option>
+				<option value="1">COM_DJCATALOG2_CONFIG_PRODUCER_LINK</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_HIDE</option>
+			</field>
+			<field name="show_producers_items" type="list"  default="0" label="COM_DJCATALOG2_CONFIG_SHOW_PRODUCERS_ITEMS" description="COM_DJCATALOG2_CONFIG_SHOW_PRODUCERS_ITEMS_DESC">
+				<option value="1">COM_DJCATALOG2_CONFIG_SHOW</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_HIDE</option>
+			</field>
+			<field name="show_price" type="list"  default="1" label="COM_DJCATALOG2_CONFIG_SHOW_PRICE" description="COM_DJCATALOG2_CONFIG_SHOW_PRICE_DESC">
+				<option value="2">COM_DJCATALOG2_CONFIG_PRICE_ALWAYS</option>
+				<option value="1">COM_DJCATALOG2_CONFIG_PRICE_ONLY_IF_GTT0</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_HIDE</option>
+			</field>
+			<field name="items_show_attributes" type="list"  default="1" label="COM_DJCATALOG2_CONFIG_SHOW_ITEM_ATTRIBUTES" description="COM_DJCATALOG2_CONFIG_SHOW_ITEM_ATTRIBUTES_DESC" >
+				<option value="1">COM_DJCATALOG2_CONFIG_SHOW</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_HIDE</option>
+			</field>
+			<field name="items_show_intro" type="list"  default="1" label="COM_DJCATALOG2_CONFIG_SHOW_ITEM_INTRO_DESCRIPTION" description="COM_DJCATALOG2_CONFIG_SHOW_ITEM_INTRO_DESCRIPTION_DESC" >
+				<option value="1">COM_DJCATALOG2_CONFIG_SHOW</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_HIDE</option>
+			</field>
+			<field name="items_intro_trunc" type="list"  default="0" label="COM_DJCATALOG2_CONFIG_SHOW_ITEM_INTRO_DESCRIPTION_TRUNCATE" description="COM_DJCATALOG2_CONFIG_SHOW_ITEM_INTRO_DESCRIPTION_TRUNCATE_DESC" >
+				<option value="1">COM_DJCATALOG2_CONFIG_YES</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_NO</option>
+			</field>
+			<field name="items_intro_length" type="text" default="0" label="COM_DJCATALOG2_CONFIG_SHOW_ITEM_INTRO_DESCRIPTION_LENGTH" description="COM_DJCATALOG2_CONFIG_SHOW_ITEM_INTRO_DESCRIPTION_LENGTH_DESC" menu="hide"/>
+			<field name="image_link_item" default="0" label="COM_DJCATALOG2_CONFIG_SHOW_ITEM_IMAGE_BEHAVIOR" description="COM_DJCATALOG2_CONFIG_SHOW_ITEM_IMAGE_BEHAVIOR_DESC" type="list"  menu="hide">
+				<option value="0">COM_DJCATALOG2_CONFIG_REDIRECT</option>
+				<option value="1">COM_DJCATALOG2_CONFIG_LIGHTBOX</option>
+			</field>
+			<field name="showreadmore_item" default="1" label="COM_DJCATALOG2_CONFIG_SHOW_ITEM_READMORE" description="COM_DJCATALOG2_CONFIG_SHOW_ITEM_READMORE_DESC" type="list" >
+				<option value="0">COM_DJCATALOG2_CONFIG_HIDE</option>
+				<option value="1">COM_DJCATALOG2_CONFIG_SHOW</option>
+			</field>
+		</fieldset>
+		<fieldset 
+		name="item-view" 
+		label="COM_DJCATALOG2_CONFIG_ITEM_VIEW_SETTINGS_LABEL">
+			<field name="show_category_name_item" type="list"  default="1" label="COM_DJCATALOG2_CONFIG_SHOW_CATEGORY_NAME" description="COM_DJCATALOG2_CONFIG_SHOW_CATEGORY_NAME_DESC">
+				<option value="2">COM_DJCATALOG2_CONFIG_TEXT</option>
+				<option value="1">COM_DJCATALOG2_CONFIG_LINK</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_HIDE</option>
+			</field>
+			<field name="show_producer_name_item" type="list"  default="3" label="COM_DJCATALOG2_CONFIG_SHOW_PRODUCER_NAME" description="COM_DJCATALOG2_CONFIG_SHOW_PRODUCER_NAME_DESC">
+				<option value="3">COM_DJCATALOG2_CONFIG_PRODUCER_LIGHTBOX</option>
+				<option value="2">COM_DJCATALOG2_CONFIG_TEXT</option>
+				<option value="1">COM_DJCATALOG2_CONFIG_PRODUCER_LINK</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_HIDE</option>
+			</field>
+			<field name="show_producers_items_item" type="list"  default="1" label="COM_DJCATALOG2_CONFIG_SHOW_PRODUCERS_ITEMS" description="COM_DJCATALOG2_CONFIG_SHOW_PRODUCERS_ITEMS_DESC">
+				<option value="1">COM_DJCATALOG2_CONFIG_SHOW</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_HIDE</option>
+			</field>
+			<field name="show_price_item" type="list"  default="1" label="COM_DJCATALOG2_CONFIG_SHOW_PRICE" description="COM_DJCATALOG2_CONFIG_SHOW_PRICE_DESC">
+				<option value="2">COM_DJCATALOG2_CONFIG_PRICE_ALWAYS</option>
+				<option value="1">COM_DJCATALOG2_CONFIG_PRICE_ONLY_IF_GTT0</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_HIDE</option>
+			</field>
+			<field name="related_items_columns" type="text" default="2" label="COM_DJCATALOG2_CONFIG_RELATED_PRODUCTS_COLUMNS" description="COM_DJCATALOG2_CONFIG_RELATED_PRODUCTS_COLUMNS_DESC" menu="hide" />
+			<field name="related_items_count" type="text" default="2" label="COM_DJCATALOG2_CONFIG_RELATED_ITEMS_COUNT" description="COM_DJCATALOG2_CONFIG_RELATED_ITEMS_COUNT_DESC"/>
+		</fieldset>
+		<fieldset 
+		name="images" 
+		label="COM_DJCATALOG2_CONFIG_IMAGE_SETTINGS_LABEL">
+			<field type="spacer" class="text" label="COM_DJCATALOG2_CONFIG_IMAGE_GLOBAL" />
+			<field name="lightbox_type" type="list" default="slimbox" label="COM_DJCATALOG2_CONFIG_IMAGE_LIGHTBOX_TYPE" descriptio="COM_DJCATALOG2_CONFIG_IMAGE_LIGHTBOX_TYPE_DESC">
+				<option value="slimbox">Slimbox</option>
+				<option value="picbox">PicBox</option>
+			</field>
+			<field name="resize" type="list"  default="0" label="COM_DJCATALOG2_CONFIG_IMAGE_RESIZE" description="COM_DJCATALOG2_CONFIG_IMAGE_RESIZE_DESC" menu="hide">
+				<option value="0">COM_DJCATALOG2_CONFIG_IMAGE_RESIZE</option>
+				<option value="3">COM_DJCATALOG2_CONFIG_IMAGE_RESIZE_AND_CROP</option>
+			</field>
+			
+			<field name="crop_alignment_h" type="list"  default="m" label="COM_DJCATALOG2_CONFIG_IMAGE_CROP_ALIGNMENT_H" description="COM_DJCATALOG2_CONFIG_IMAGE_CROP_ALIGNMENT_H_DESC" menu="hide">
+				<option value="l">COM_DJCATALOG2_CONFIG_LEFT</option>
+				<option value="m">COM_DJCATALOG2_CONFIG_MIDDLE</option>
+				<option value="r">COM_DJCATALOG2_CONFIG_RIGHT</option>
+			</field>
+			
+			<field name="crop_alignment_v" type="list"  default="m" label="COM_DJCATALOG2_CONFIG_IMAGE_CROP_ALIGNMENT_V" description="COM_DJCATALOG2_CONFIG_IMAGE_CROP_ALIGNMENT_V_DESC" menu="hide">
+				<option value="t">COM_DJCATALOG2_CONFIG_TOP</option>
+				<option value="m">COM_DJCATALOG2_CONFIG_MIDDLE</option>
+				<option value="b">COM_DJCATALOG2_CONFIG_BOTTOM</option>
+			</field>
+			
+			<field name="width" type="text" default="300" label="COM_DJCATALOG2_CONFIG_IMAGE_LARGE_WIDTH" description="COM_DJCATALOG2_CONFIG_IMAGE_SIZE_LARGE_DESC" menu="hide" />
+			<field name="height" type="text" default="300" label="COM_DJCATALOG2_CONFIG_IMAGE_LARGE_HEIGHT" description="COM_DJCATALOG2_CONFIG_IMAGE_SIZE_LARGE_DESC" menu="hide" />
+			<field name="th_width" type="text" label="COM_DJCATALOG2_CONFIG_IMAGE_MEDIUM_WIDTH" description="COM_DJCATALOG2_CONFIG_IMAGE_SIZE_MEDIUM_DESC" size="5" default="120" menu="hide"/>
+			<field name="th_height" type="text" label="COM_DJCATALOG2_CONFIG_IMAGE_MEDIUM_HEIGHT" description="COM_DJCATALOG2_CONFIG_IMAGE_SIZE_MEDIUM_DESC" size="5" default="120" menu="hide"/>
+			<field name="smallth_width" type="text" label="COM_DJCATALOG2_CONFIG_IMAGE_SMALL_WIDTH" description="COM_DJCATALOG2_CONFIG_IMAGE_SIZE_SMALL_DESC" size="5" default="92" menu="hide"/>
+			<field name="smallth_height" type="text" label="COM_DJCATALOG2_CONFIG_IMAGE_SMALL_HEIGHT" description="COM_DJCATALOG2_CONFIG_IMAGE_SIZE_SMALL_DESC" size="5" default="92" menu="hide" />
+			<field name="smallth_spacing_v" type="text" default="4" label="COM_DJCATALOG2_CONFIG_IMAGE_V_SPACING" description="COM_DJCATALOG2_CONFIG_IMAGE_V_SPACING_DESC" />
+			<field name="smallth_spacing_h" type="text" default="4" label="COM_DJCATALOG2_CONFIG_IMAGE_H_SPACING" description="COM_DJCATALOG2_CONFIG_IMAGE_H_SPACING_DESC" />
+			<field name="smallth_padding_h" type="text" default="4" label="COM_DJCATALOG2_CONFIG_IMAGE_H_PADDING" description="COM_DJCATALOG2_CONFIG_IMAGE_H_PADDING_DESC" />
+			<field type="spacer" hr="true" />
+			<field type="spacer" class="text" label="COM_DJCATALOG2_CONFIG_IMAGE_CATEGORY" />
+			<field name="category_resize" type="list"  default="" label="COM_DJCATALOG2_CONFIG_IMAGE_RESIZE" description="COM_DJCATALOG2_CONFIG_IMAGE_RESIZE_DESC" menu="hide">
+				<option value="">COM_DJCATALOG2_CONFIG_IMAGE_FIT_GLOBAL</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_IMAGE_RESIZE</option>
+				<option value="3">COM_DJCATALOG2_CONFIG_IMAGE_RESIZE_AND_CROP</option>
+			</field>
+			<field name="category_width" type="text" default="" label="COM_DJCATALOG2_CONFIG_IMAGE_LARGE_WIDTH" description="COM_DJCATALOG2_CONFIG_IMAGE_SIZE_LARGE_DESC" menu="hide" />
+			<field name="category_height" type="text" default="" label="COM_DJCATALOG2_CONFIG_IMAGE_LARGE_HEIGHT" description="COM_DJCATALOG2_CONFIG_IMAGE_SIZE_LARGE_DESC" menu="hide" />
+			<field name="category_th_width" type="text" label="COM_DJCATALOG2_CONFIG_IMAGE_MEDIUM_WIDTH" description="COM_DJCATALOG2_CONFIG_IMAGE_SIZE_MEDIUM_DESC" size="5" default="" menu="hide"/>
+			<field name="category_th_height" type="text" label="COM_DJCATALOG2_CONFIG_IMAGE_MEDIUM_HEIGHT" description="COM_DJCATALOG2_CONFIG_IMAGE_SIZE_MEDIUM_DESC" size="5" default="" menu="hide"/>
+			<field name="category_smallth_width" type="text" label="COM_DJCATALOG2_CONFIG_IMAGE_SMALL_WIDTH" description="COM_DJCATALOG2_CONFIG_IMAGE_SIZE_SMALL_DESC" size="5" default="" menu="hide"/>
+			<field name="category_smallth_height" type="text" label="COM_DJCATALOG2_CONFIG_IMAGE_SMALL_HEIGHT" description="COM_DJCATALOG2_CONFIG_IMAGE_SIZE_SMALL_DESC" size="5" default="" menu="hide" />
+			<field name="category_smallth_spacing_v" type="text" default="" label="COM_DJCATALOG2_CONFIG_IMAGE_V_SPACING" description="COM_DJCATALOG2_CONFIG_IMAGE_V_SPACING_DESC" />
+			<field name="category_smallth_spacing_h" type="text" default="" label="COM_DJCATALOG2_CONFIG_IMAGE_H_SPACING" description="COM_DJCATALOG2_CONFIG_IMAGE_H_SPACING_DESC" />
+			<field name="category_smallth_padding_h" type="text" default="" label="COM_DJCATALOG2_CONFIG_IMAGE_H_PADDING" description="COM_DJCATALOG2_CONFIG_IMAGE_H_PADDING_DESC" />
+			<field type="spacer" hr="true" />
+			<field type="spacer" class="text" label="COM_DJCATALOG2_CONFIG_IMAGE_PRODUCER" />
+			<field name="producer_resize" type="list"  default="" label="COM_DJCATALOG2_CONFIG_IMAGE_RESIZE" description="COM_DJCATALOG2_CONFIG_IMAGE_RESIZE_DESC" menu="hide">
+				<option value="">COM_DJCATALOG2_CONFIG_IMAGE_FIT_GLOBAL</option>
+				<option value="0">COM_DJCATALOG2_CONFIG_IMAGE_RESIZE</option>
+				<option value="3">COM_DJCATALOG2_CONFIG_IMAGE_RESIZE_AND_CROP</option>
+			</field>
+			<field name="producer_width" type="text" default="" label="COM_DJCATALOG2_CONFIG_IMAGE_LARGE_WIDTH" description="COM_DJCATALOG2_CONFIG_IMAGE_SIZE_LARGE_DESC" menu="hide" />
+			<field name="producer_height" type="text" default="" label="COM_DJCATALOG2_CONFIG_IMAGE_LARGE_HEIGHT" description="COM_DJCATALOG2_CONFIG_IMAGE_SIZE_LARGE_DESC" menu="hide" />
+			<field name="producer_th_width" type="text" label="COM_DJCATALOG2_CONFIG_IMAGE_MEDIUM_WIDTH" description="COM_DJCATALOG2_CONFIG_IMAGE_SIZE_MEDIUM_DESC" size="5" default="" menu="hide"/>
+			<field name="producer_th_height" type="text" label="COM_DJCATALOG2_CONFIG_IMAGE_MEDIUM_HEIGHT" description="COM_DJCATALOG2_CONFIG_IMAGE_SIZE_MEDIUM_DESC" size="5" default="" menu="hide"/>
+			<field name="producer_smallth_width" type="text" label="COM_DJCATALOG2_CONFIG_IMAGE_SMALL_WIDTH" description="COM_DJCATALOG2_CONFIG_IMAGE_SIZE_SMALL_DESC" size="5" default="" menu="hide"/>
+			<field name="producer_smallth_height" type="text" label="COM_DJCATALOG2_CONFIG_IMAGE_SMALL_HEIGHT" description="COM_DJCATALOG2_CONFIG_IMAGE_SIZE_SMALL_DESC" size="5" default="" menu="hide" />
+			<field name="producer_smallth_spacing_v" type="text" default="" label="COM_DJCATALOG2_CONFIG_IMAGE_V_SPACING" description="COM_DJCATALOG2_CONFIG_IMAGE_V_SPACING_DESC" />
+			<field name="producer_smallth_spacing_h" type="text" default="" label="COM_DJCATALOG2_CONFIG_IMAGE_H_SPACING" description="COM_DJCATALOG2_CONFIG_IMAGE_H_SPACING_DESC" />
+			<field name="producer_smallth_padding_h" type="text" default="" label="COM_DJCATALOG2_CONFIG_IMAGE_H_PADDING" description="COM_DJCATALOG2_CONFIG_IMAGE_H_PADDING_DESC" />
+		</fieldset>
+		<fieldset name="permissions"
+			description="JCONFIG_PERMISSIONS_DESC"
+			label="JCONFIG_PERMISSIONS_LABEL"
+		>
+	
+			<field name="rules" type="rules"
+				component="com_djcatalog2"
+				filter="rules"
+				validate="rules"
+				label="JCONFIG_PERMISSIONS_LABEL"
+				section="component" />
+		</fieldset>
+	</config>

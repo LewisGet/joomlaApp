@@ -1,0 +1,216 @@
+.center {
+	text-align: center;
+}
+
+#container {
+	background: #fff;
+	margin: 100px auto 0 auto;
+	padding: 1em;
+	width: 400px;
+}
+
+#checkUpdate {
+	font-size: 16px;
+	color: #1B5D00;
+}
+
+#cpanel #checkUpdate span {
+	text-align: left;
+}
+
+#checkUpdate .updateyes {
+	font-size: 16px;
+}
+
+#checkUpdate .updateyes a {
+	font-size: 16px;
+	color: #ff6600;
+}
+
+#checkUpdate .updateno {
+	font-size: 16px;
+	color: #1B5D00;
+}
+
+#currentVersion {
+	font-size: 16px;
+	color: #1B5D00;
+}
+
+div.reset {
+	clear: both;
+}
+
+#orders table {
+	padding: 1px;
+	font-size: 12px;
+}
+
+table.orderInfoTable {
+	border-left: 1px solid white
+}
+
+table.paymentTable {
+	border-left: 1px solid white
+}
+
+table.orders {
+	background-color: #E6EFF3;
+	width: 940px;
+}
+
+table.cart_order {
+	border: 1px solid #ccc;
+	font-size: 12px;
+	width: 66%;
+}
+
+table.cart_order thead#head {
+	background: #383838;
+	color: #fff;
+	text-align: left;
+}
+
+.icon-48-j2store-logo {
+	background: url('../images/j2store-logo.png') 0 0 no-repeat;
+}
+
+table.j2store_itemoptions,.j2store_itemfiles {
+	float: left;
+}
+
+/*	Table - Product items	*/
+table.j2store_itemoptions {
+	float: left;
+}
+
+table.j2store_itemoptions {
+	border-collapse: collapse;
+	margin-bottom: 1em;
+	width: 100%;
+}
+
+table.j2store_itemoptions th {
+	background: #0055b3;
+	color: #fff;
+	text-align: left;
+	white-space: nowrap;
+}
+
+table.j2store_itemoptions th,table.j2store_itemoptions td {
+	padding: 3px;
+}
+
+table.j2store_itemoptions tr td {
+	background: #fff;
+	border: 1px solid #ccc;
+}
+
+/*	Table - Product files	*/
+table.j2store_itemfiles {
+	float: left;
+}
+
+table #j2store_table .j2store_trash {
+	background-image: url("../images/trash.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+table #j2store_files_table .j2store_trash {
+	background-image: url("../images/trash.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+table #j2store_files_table .enabled {
+	background-image: url("../images/enabled.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+table #j2store_files_table .disabled {
+	background-image: url("../images/disabled.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+table.j2store_itemfiles {
+	border-collapse: collapse;
+	margin-bottom: 1em;
+	width: 100%;
+}
+
+table.j2store_itemfiles th {
+	background: #0055b3;
+	color: #fff;
+	text-align: left;
+	white-space: nowrap;
+}
+
+table.j2store_itemfiles th,table.j2store_itemfiles td {
+	padding: 3px;
+}
+
+table.j2store_itemfiles tr td {
+	background: #fff;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+.j2storeAdminCpanel .icon span {
+	font-weight: bold;
+}
+
+.j2store_quicktips {
+	border: 1px solid #901156;
+	background: #fff;
+	margin-bottom: 5px;
+}
+
+.j2store_quicktips li {
+	color: #901156;
+	font-style: italic;
+	font-size: 12px;
+}
+
+.j2store_quicktips .learn_more {
+	font-weight: bold;
+}
+
+.j2store_quicktips .learn_more a {
+	text-align: left;
+	color: #73A614;
+}
+
+.j2store_update {
+	padding: 4px 8px;
+	border: 5px solid #d4d4d4;
+	font-size: 14px;
+	background: #fff;
+}
+
+.j2store_update h1 {
+	margin: 0 0 12px 0;
+	color: #901156;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.j2store_update h2 {
+	color: #901156;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.j2store_update ul {
+	margin-left: 15px;
+}
+
+.j2store_update p {
+	line-height: 130%;
+}
+
+.j2store_update a:link {
+	color: #901156;
+}

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Google Map Location Search Layout">
+		<message>
+			<![CDATA[Google Map Location Search Layout]]>
+		</message>
+	</layout>
+	<state>
+		<name>Google Map Location Search Layout</name>
+		<description>Google Map Location Search Layout</description>
+	
+		<include path="state" source="/components/com_locator/views/directory/tmpl/_ml_gmap.xml" /> 
+		
+		<params addpath="/administrator/components/com_locator/elements">
+			<param name="tags" type="tag" label="Tags" source="tag" multiple="multiple" description="Tags to include on this map.  Leave all unselected for All."></param>	
+			<param name="country" type="tag" source="country" label="Countries" multiple="multiple" description="Countries to include on this map. Leave all unselected for All. "></param>	
+			<param name="showall" type="list" default="1" label="Show all locations by default?" description="Show all locations by default">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			<param name="showemptymap" type="list" default="1" label="Show empty map?" description="Show the map when no locations are found or all are not shown by default">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>	
+			<param name="article" type="article" default="" label="Intro article" description="Choose an article to display above the locator form"></param>	
+			
+				<param name="postal_code_label" type="text" default="LOCATOR_POSTAL_CODE" label="Default postal code label" description="The label of the primary location search field.  You can use: [Postal Code], [City, State] or both.  This search is geocoded on demand and the resulting lat/lng are used as the center of the radius search.  Since Google Maps Geocoder is used for this process, nearly any complete location search will provide valid results."></param>			
+			<param name="tag_label" type="text" default="LOCATOR_TAG" label="Default tag label" description="The label of the tag search field.  You may choose to label tags as 'Category' etc. "></param>			
+			
+			<param name="list_length" type="text" default="500" label="Maximum number of Results Per Page" description="The number of results to show per page.  Should not exceed 500 for map layouts."></param>			
+			<param name="page_list" type="text" default="50,100,250,500" label="List of available numbers of Results Per Page" description="The number of results to show per page.  Should not exceed 500 for map layouts."></param>			
+			<param name="page_list_default" type="text" default="100" label="Default number of Results Per Page" description="The number of results to show per page.  Should not exceed 500 for map layouts."></param>			
+
+			<param name="maxresults" type="text" default="500" label="Maximum number of results" description="The maximum number of search results to display.  Leave blank for unlimited."></param>			
+			<param name="showkeywordform" type="list" default="1" label="Show keyword search form?" description="Show keyword code search form">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>	
+			<param name="centeronresults" type="list" default="1" label="Center Map on results?" description="Automatically zooms and pans the search results map display to best fit the search results.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			
+			<param name="use_ssl" type="list" default="0" label="Use SSL for Maps" description="Uses SSL for map display">
+		    	<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			
+    		<param type="text" name="gmap_initial_lat" default="" size="25" label="Initial Map Center Latitude" description="(Ex. 41.397) The initial center latitude of the map.  This is not overridden by the Menu item parameters." />
+		    <param type="text" name="gmap_initial_lng" default="" size="25" label="Initial Map Center Longitude" description="(Ex. -96.644) The initial center Longitude of the map.  This is not overridden by the Menu item parameters." />
+		    <param type="text" name="gmap_initial_zoom" default="" size="25" label="Initial Map Zoom" description="(Ex 4) The initial zoom level of the map (1-10).  This is not overridden by the Menu item parameters." />
+						
+			
+		    <param type="text" name="gmap_default_lat" default="41.397" size="25" label="Map Center Latitude" description="The center latitude of the map.  This can be overridden by the Menu item parameters." />
+		    <param type="text" name="gmap_default_lng" default="-96.644" size="25" label="Map Center Longitude" description="The center Longitude of the map.  This can be overridden by the Menu item parameters." />
+		    <param type="text" name="gmap_default_zoom" default="4" size="25" label="Map Zoom" description="The default zoom level of the map (1-10).  This can be overridden by the Menu item parameters." />
+			<param name="linktarget" type="list" default="1"  label="Open link in new window?" description="This will set the entry's link to open in a new window.  This controls only the behavior of the item's link field. ">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			
+			<param name="linkhttp" type="list" default="1"  label="Add HTTP to link?" description="This add http:// to the link ">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+								
+			<param name="triggercontentplugin" type="list" default="0"  label="Trigger content plugins?" description="This will execute content preparation plugins on each directory entry.  May cause performance degradation with many plugins">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>			    
+		
+		    <param type="list" name="distance_unit" default="LOCATOR_M" size="3" label="Measure in KM or Miles" description="When searching for locations near a postal code, use Kilometres or Miles" >
+		    	<option value="LOCATOR_M">Miles</option>
+		    	<option value="LOCATOR_K">Kilometers</option>
+		    </param>
+			
+		    <param type="list" name="show_directions" default="1" label="Show Directions?" description="Show a link on the google map info window to directions" >
+		    	<option value="1">Yes</option>
+		    	<option value="0">No</option>
+		    </param> 	
+			<param name="showintroonly" type="list" default="1" label="Show only introtext of description?" description="This will prevent text after the Joomla system readmore from being displayed on the search results page">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>		    				
+			<param name="zoomlevelonsingle" type="text" default="16" label="Zoom Level on Single Result:" description="When a single search result is found, the default Google zoom level is often too close(20).  This allows you to set it to a more useful level" />						
+			<param name="showzipform" type="list" default="1" label="Show postal code search form?" description="Show postal code search form">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>		
+			<param name="showtagdropdown" type="list" default="1" label="Show drop-down list of tags?" description="Show drop-down list of tags">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>	
+			<param name="showtaggroups" type="list" default="0" label="Show Tags in Groups of Drop-Downs?" description="Show a drop-down list of tags for each group">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			<param name="showtagcheckboxes" type="list" default="0" label="Show Tags in Groups of Check Boxes?" description="Show a list of checkboxes for each tag in groups">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>	
+					
+			<param name="showtaglist" type="list" default="0" label="Show list of tags?" description="Show a list of tags underneath the location.  This corresponds to {taglist} in the item template.  This must be enabled for {taglist} to work">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>			
+			<param name="showstatedropdown" type="list" default="1" label="Show drop-down list of states/provinces?" description="Show drop-down list of states/provinces">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			<param name="showcitydropdown" type="list" default="0" label="Show drop-down list of cities?" description="Show drop-down list of cities">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>				
+			<param name="showcountrydropdown" type="list" default="0" label="Show drop-down list of Countries?" description="Show drop-down list of Countries">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>			
+			<param name="requirepostalcode" type="list" default="1" label="Require a postal code?" description="Prevents users from pressing Submit and displaying all records">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			<param name="distances" type="text" default="5,10,25,50,100" label="List of distances" description="A comma-separated list of values to show in the drop-down box that indicates the search radius."/>
+			
+			<!-- 
+			<param name="show_overlays" type="list" default="0" label="Show Country Overlays" description="Show clickable country-level overlays that allow drilldown to search.  You must use TWO locator menu items in tandem for this to work.">
+		    	<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			<param name="overlay_regions" multiple="multiple" type="region" default="0" label="Show Country Overlays" description="Choose the region."/>
+			
+			<param name="overlay_results" type="menuitem" default="" label="Overlay Links to:" description="What page should the results be displayed on?  This *must* be a menu type of Locator.  "/>
+			-->
+			<param name="defaultmapview" type="list" default="ROADMAP" label="Default Map View" description="Sets the default type of Google Map display">
+				<option value="ROADMAP">ROADMAP</option>
+				<option value="SATELLITE">SATELLITE</option>
+				<option value="HYBRID">HYBRID</option>
+				<option value="TERRAIN">TERRAIN</option>
+			</param>
+			
+			<param name="clusterer" type="list" default="0"  label="Cluster Map Markers?" description="This option is useful when you have many markers.  It clusters the markers into clickable groups.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			<param name="cluster_zoom" type="text" default="12"  label="Cluster Zoom?" description="The max zoom level monitored by a marker cluster. If not given, the marker cluster assumes the maximum map zoom level. When maxZoom is reached or exceeded all markers will be shown without cluster." />
+			<param name="cluster_gridsize" type="text" default="60"  label="Cluster Grid Size?" description="The grid size of a cluster in pixel. Each cluster will be a square. If you want the algorithm to run faster, you can set this value larger. The default value is 60." />
+		
+					
+			<param name="linktarget" type="list" default="1" label="Open link in new window?" description="This will set the entry's link to open in a new window.  This controls only the behavior of the item's link field. ">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			<param type="text" name="gmap_width" default="80%" size="25" label="Map Width" description="The CSS width of the map.  It can be in percent (as in 80%) or pixels (as in 550px)." />
+    		<param type="text" name="gmap_height" default="500" size="25" label="Map Height" description="Map height in pixels (E.g: 500). This can be overridden by the Menu item parameters." />
+			
+			<param type="textarea" name="map_address_template" rows="5" cols="20" default="{title}{distance}[br]{address}[br]{address2}[br] {city}, {state} {postalcode}[br]{phone}[br]{link}[br]{description}[br]{taglist}" size="25" label="Map popup item address format" description="The format of the address and information that appears in the Google Map popup window. Fields are lowercase and in curly brackets. HTML Tags are in square brackets, (E.g. [br][p][/p])  Items with a [br] tag directly after them (no spaces) that are blank will also omit the the [br] tag"/>			
+			<param type="textarea" name="form_template" rows="5" cols="20" default="{zipform}{keywordform}{tagdropdown}{taggroups}{tagcheckboxes}{statedropdown}{citydropdown}{countrydropdown}" label="Search form format" description="The format and arrangement of the search form fields on the main search interface"/>			
+			<param name="linktoitempage" type="list" default="1" label="Hyperlink title to item page?" description="This will create a link to a location-specific page which shows the complete location details (fulltext).">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>				
+    		<param name="showmaponitempage" type="list" default="1" label="Show map on item page?" description="Shows a small map with the marker on the item page.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			<param type="textarea" name="address_template" rows="5" cols="20" default="{title}{distance}[br]{address}[br]{address2}[br] {city}, {state} {postalcode}[br]{phone}[br]{link}[br]{description}[br]{taglist}" size="25" label="Item address format" description="The format of the address to display on the individual item page. Fields are lowercase and in curly brackets. HTML Tags are in square brackets, (E.g. [br][p][/p])  Items with a [br] tag directly after them (no spaces) that are blank will also omit the the [br] tag"/>	
+			<param type="textarea" name="item_address_template" rows="5" cols="20" default="{title}{distance}[br]{address}[br]{address2}[br] {city}, {state} {postalcode}[br]{phone}[br]{link}[br]{description}[br]{taglist}" size="25" label="Item address format" description="The format of the address to display on the individual item page. Fields are lowercase and in curly brackets. HTML Tags are in square brackets, (E.g. [br][p][/p])  Items with a [br] tag directly after them (no spaces) that are blank will also omit the the [br] tag"/>			
+    		<param type="textarea" name="item_map_address_template" rows="5" cols="20" default="{title}{distance}[br]{address}[br]{address2}[br] {city}, {state} {postalcode}[br]{phone}[br]{link}[br]{description}[br]{taglist}" size="25" label="Item page Map popup address format" description="The format of the address in the Map Marker. Fields are lowercase and in curly brackets. HTML Tags are in square brackets, (E.g. [br][p][/p])  Items with a [br] tag directly after them (no spaces) that are blank will also omit the the [br] tag"/>			
+			
+    		<param name="showmarkeronitempage" type="list" default="1" label="Popup marker on item page?" description="Shows a small marker info window in the map by default.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>				
+			<param type="text" name="item_gmap_default_zoom" default="16" size="25" label="Item Page Map Zoom" description="Default Zoom of the map on the item page"/>
+			<param type="text" name="item_gmap_width" default="400" size="25" label="Item Page Map Width" description="Map width in pixels of the map displayed on the individual location's page (E.g: 500). "/>
+    		<param type="text" name="item_gmap_height" default="500" size="25" label="Item Page Map Height" description="Map height in pixels of the map displayed on the individual location's page (E.g: 500)." />
+
+			<param name="force_match" type="list" default="1" label="Force distance match on postal code?" description="ADVANCED ONLY: Setting this to 'Yes' will force postal code matches to match on searches for the same postal code regardless of distance and/or proximity to another postal code">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>	
+			<param type="text" name="gmap_language" default="en-GB" size="3" label="Google Maps Base Language" description="See Google Supported Lanaguages for supported languages" />
+			<param type="list" name="gmap_directions" default="" label="Google Maps Directions Unit" description="Unit of measurment for directions on Google Maps" >
+				<option value="">Auto (Based on Region)</option>
+				<option value="imperial">Force Imperial</option>
+				<option value="metric">Force Metric</option>
+			</param>			
+					
+		</params>
+	<fields name="params" addfieldpath="/administrator/components/com_locator/elements" >
+		
+		<fieldset name="basic" label="Basic Settings">
+			<field name="tags" type="tag" label="Tags" source="tag" multiple="multiple" description="Tags to include on this map.  Leave all unselected for All."></field>	
+			<field name="country" type="tag" source="country" label="Countries" multiple="multiple" description="Countries to include on this map. Leave all unselected for All. "></field>	
+			<field name="showall" type="list" default="1" label="Show all locations by default?" description="Show all locations by default">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+			<field name="showemptymap" type="list" default="1" label="Show empty map?" description="Show the map when no locations are found or all are not shown by default">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>	
+			
+					
+			<field name="postal_code_label" type="text" default="LOCATOR_POSTAL_CODE" label="Default postal code label" description="The label of the primary location search field.  You can use: [Postal Code], [City, State] or both.  This search is geocoded on demand and the resulting lat/lng are used as the center of the radius search.  Since Google Maps Geocoder is used for this process, nearly any complete location search will provide valid results."></field>												
+			<field name="tag_label" type="text" default="LOCATOR_TAG" label="Default tag label" description="The label of the tag search field.  You may choose to label tags as 'Category' etc. "></field>			
+			
+			
+			<field name="article" type="article" default="" label="Intro article" description="Choose an article to display above the locator form"></field>
+			
+			<field name="list_length" type="text" default="500" label="Maximum number of Results Per Page" description="The number of results to show per page.  Should not exceed 500 for map layouts."></field>			
+			<field name="page_list" type="text" default="50,100,250,500" label="List of available numbers of Results Per Page" description="The number of results to show per page.  Should not exceed 500 for map layouts."></field>			
+			<field name="page_list_default" type="text" default="100" label="Default number of Results Per Page" description="The number of results to show per page.  Should not exceed 500 for map layouts."></field>			
+			
+			<field name="maxresults" type="text" default="" label="Maximum number of results" description="The maximum number of search results to display.  Leave blank for unlimited."></field>			
+			<field name="showkeywordform" type="list" default="1" label="Show keyword search form?" description="Show keyword code search form">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>	
+			<field name="centeronresults" type="list" default="1" label="Center Map on results?" description="Automatically zooms and pans the search results map display to best fit the search results.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+	
+    		<field type="text" name="gmap_initial_lat" default="" size="25" label="Initial Map Center Latitude" description="(Ex. 41.397) The initial center latitude of the map.  This is not overridden by the Menu item parameters." />
+		    <field type="text" name="gmap_initial_lng" default="" size="25" label="Initial Map Center Longitude" description="(Ex. -96.644) The initial center Longitude of the map.  This is not overridden by the Menu item parameters." />
+		    <field type="text" name="gmap_initial_zoom" default="" size="25" label="Initial Map Zoom" description="(Ex 4) The initial zoom level of the map (1-10).  This is not overridden by the Menu item parameters." />
+
+			
+		    <field type="text" name="gmap_default_lat" default="41.397" size="25" label="Map Center Latitude" description="The center latitude of the map.  This can be overridden by the Menu item parameters." />
+		    <field type="text" name="gmap_default_lng" default="-96.644" size="25" label="Map Center Longitude" description="The center Longitude of the map.  This can be overridden by the Menu item parameters." />
+		    <field type="text" name="gmap_default_zoom" default="4" size="25" label="Map Zoom" description="The default zoom level of the map (1-10).  This can be overridden by the Menu item parameters." />
+			<field name="linktarget" type="list" default="1"  label="Open link in new window?" description="This will set the entry's link to open in a new window.  This controls only the behavior of the item's link field. ">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+			
+			<field name="linkhttp" type="list" default="1"  label="Add HTTP to link?" description="This add http:// to the link ">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+								
+			<field name="triggercontentplugin" type="list" default="0"  label="Trigger content plugins?" description="This will execute content preparation plugins on each directory entry.  May cause performance degradation with many plugins">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>			    
+		
+		    <field type="list" name="distance_unit" default="LOCATOR_M" size="3" label="Measure in KM or Miles" description="When searching for locations near a postal code, use Kilometres or Miles" >
+		    	<option value="LOCATOR_M">Miles</option>
+		    	<option value="LOCATOR_K">Kilometers</option>
+		    </field>
+			
+		    <field type="list" name="show_directions" default="1" label="Show Directions?" description="Show a link on the google map info window to directions" >
+		    	<option value="1">Yes</option>
+		    	<option value="0">No</option>
+		    </field> 	
+			<field name="showintroonly" type="list" default="1" label="Show only introtext of description?" description="This will prevent text after the Joomla system readmore from being displayed on the search results page">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>		    				
+			<field name="zoomlevelonsingle" type="text" default="16" label="Zoom Level on Single Result:" description="When a single search result is found, the default Google zoom level is often too close(20).  This allows you to set it to a more useful level" />						
+			<field name="showzipform" type="list" default="1" label="Show postal code search form?" description="Show postal code search form">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>		
+			<field name="showtagdropdown" type="list" default="1" label="Show drop-down list of tags?" description="Show drop-down list of tags">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+			<field name="showtaggroups" type="list" default="0" label="Show Tags in Groups of Drop-Downs?" description="Show a drop-down list of tags for each group">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+			<field name="showtagcheckboxes" type="list" default="0" label="Show Tags in Groups of Check Boxes?" description="Show a list of checkboxes for each tag in groups">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>	
+			<field name="showtaglist" type="list" default="0" label="Show list of tags?" description="Show a list of tags underneath the location.  This corresponds to {taglist} in the item template.  This must be enabled for {taglist} to work">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>					
+			<field name="showstatedropdown" type="list" default="1" label="Show drop-down list of states/provinces?" description="Show drop-down list of states/provinces">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+			<field name="showcitydropdown" type="list" default="0" label="Show drop-down list of cities?" description="Show drop-down list of cities">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>				
+			<field name="showcountrydropdown" type="list" default="0" label="Show drop-down list of Countries?" description="Show drop-down list of Countries">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>			
+			<field name="requirepostalcode" type="list" default="1" label="Require a postal code?" description="Prevents users from pressing Submit and displaying all records">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+			<field name="distances" type="text" default="5,10,25,50,100" label="List of distances" description="A comma-separated list of values to show in the drop-down box that indicates the search radius."/>
+			<field name="use_ssl" type="list" default="0" label="Use SSL for Maps" description="Uses SSL for map display">
+		    	<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+			<field name="defaultmapview" type="list" default="ROADMAP" label="Default Map View" description="Sets the default type of Google Map display">
+				<option value="ROADMAP">ROADMAP</option>
+				<option value="SATELLITE">SATELLITE</option>
+				<option value="HYBRID">HYBRID</option>
+				<option value="TERRAIN">TERRAIN</option>
+			</field>	
+			<field name="clusterer" type="list" default="0"  label="Cluster Map Markers?" description="This option is useful when you have many markers.  It clusters the markers into clickable groups.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+			<field name="cluster_zoom" type="text" default="12"  label="Cluster Zoom?" description="The max zoom level monitored by a marker cluster. If not given, the marker cluster assumes the maximum map zoom level. When maxZoom is reached or exceeded all markers will be shown without cluster." />
+			<field name="cluster_gridsize" type="text" default="60"  label="Cluster Grid Size?" description="The grid size of a cluster in pixel. Each cluster will be a square. If you want the algorithm to run faster, you can set this value larger. The default value is 60." />
+		
+			<field type="text" name="gmap_base_tld" default="US" size="3" label="Google Maps Base TLD" description="The two-letter country code top-level domain used to bias the geocoder's results. See http://www.iana.org/domains/root/db/index.html" />
+			<field type="text" name="gmap_language" default="en-GB" size="3" label="Google Maps Base Language" description="See Google Supported Lanaguages for supported languages" />
+			
+			<field type="list" name="gmap_directions" default="" label="Google Maps Directions Unit" description="Unit of measurment for directions on Google Maps" >
+				<option value="">Auto (Based on Region)</option>
+				<option value="imperial">Force Imperial</option>
+				<option value="metric">Force Metric</option>
+			</field>			
+			
+			<field name="linktarget" type="list" default="1" label="Open link in new window?" description="This will set the entry's link to open in a new window.  This controls only the behavior of the item's link field. ">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+			<field type="text" name="gmap_width" default="80%" size="25" label="Map Width" description="The CSS width of the map.  It can be in percent (as in 80%) or pixels (as in 550px)" />
+    		<field type="text" name="gmap_height" default="500" size="25" label="Map Height" description="Map height in pixels (E.g: 500). This can be overridden by the Menu item fieldeters." />
+			
+			<field type="textarea" name="map_address_template" rows="5" cols="20" default="{title}{distance}[br]{address}[br]{address2}[br] {city}, {state} {postalcode}[br]{phone}[br]{link}[br]{description}[br]{taglist}" size="25" label="Map popup item address format" description="The format of the address and information that appears in the Google Map popup window. Fields are lowercase and in curly brackets. HTML Tags are in square brackets, (E.g. [br][p][/p])  Items with a [br] tag directly after them (no spaces) that are blank will also omit the the [br] tag"/>			
+			<field type="textarea" name="form_template" rows="5" cols="20" default="{zipform}{keywordform}{tagdropdown}{taggroups}{tagcheckboxes}{statedropdown}{citydropdown}{countrydropdown}" label="Search form format" description="The format and arrangement of the search form fields on the main search interface"/>			
+			
+			<field name="linktoitempage" type="list" default="1" label="Hyperlink title to item page?" description="This will create a link to a location-specific page which shows the complete location details (fulltext).">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>				
+    		<field name="showmaponitempage" type="list" default="1" label="Show map on item page?" description="Shows a small map with the marker on the item page.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+			<field type="textarea" name="address_template" rows="5" cols="20" default="{title}{distance}[br]{address}[br]{address2}[br] {city}, {state} {postalcode}[br]{phone}[br]{link}[br]{description}[br]{taglist}" size="25" label="Item address format" description="The format of the address to display on the individual item page. Fields are lowercase and in curly brackets. HTML Tags are in square brackets, (E.g. [br][p][/p])  Items with a [br] tag directly after them (no spaces) that are blank will also omit the the [br] tag"/>			
+    		<field name="showmarkeronitempage" type="list" default="1" label="Popup marker on item page?" description="Shows a small marker info window in the map by default.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+			<field type="textarea" name="item_address_template" rows="5" cols="20" default="{title}{distance}[br]{address}[br]{address2}[br] {city}, {state} {postalcode}[br]{phone}[br]{link}[br]{description}[br]{taglist}" size="25" label="Item address format" description="The format of the address to display on the individual item page. Fields are lowercase and in curly brackets. HTML Tags are in square brackets, (E.g. [br][p][/p])  Items with a [br] tag directly after them (no spaces) that are blank will also omit the the [br] tag"/>			
+    		<field type="textarea" name="item_map_address_template" rows="5" cols="20" default="{title}{distance}[br]{address}[br]{address2}[br] {city}, {state} {postalcode}[br]{phone}[br]{link}[br]{description}[br]{taglist}" size="25" label="Item page Map popup address format" description="The format of the address in the Map Marker. Fields are lowercase and in curly brackets. HTML Tags are in square brackets, (E.g. [br][p][/p])  Items with a [br] tag directly after them (no spaces) that are blank will also omit the the [br] tag"/>			
+			
+    		<field name="showmarkeronitempage" type="list" default="1" label="Popup marker on item page?" description="Shows a small marker info window in the map by default.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>				
+			<field type="text" name="item_gmap_default_zoom" default="16" size="25" label="Item Page Map Zoom" description="Default Zoom of the map on the item page"/>
+			<field type="text" name="item_gmap_width" default="400" size="25" label="Item Page Map Width" description="Map width in pixels of the map displayed on the individual location's page (E.g: 500). "/>
+    		<field type="text" name="item_gmap_height" default="500" size="25" label="Item Page Map Height" description="Map height in pixels of the map displayed on the individual location's page (E.g: 500)." />
+
+			<field name="force_match" type="list" default="1" label="Force distance match on postal code?" description="ADVANCED ONLY: Setting this to 'Yes' will force postal code matches to match on searches for the same postal code regardless of distance and/or proximity to another postal code">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+		</fieldset>
+	</fields>	
+	</state>
+</metadata>

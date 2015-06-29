@@ -1,0 +1,60 @@
+<?php
+/**
+ * @package		EasyBlog
+ * @copyright	Copyright (C) 2010 Stack Ideas Private Limited. All rights reserved.
+ * @license		GNU/GPL, see LICENSE.php
+ *
+ * EasyBlog is free software. This version may have been modified pursuant
+ * to the GNU General Public License, and as distributed it includes or
+ * is derivative of works licensed under the GNU General Public License or
+ * other free or open source software licenses.
+ * See COPYRIGHT.php for copyright notices and details.
+ */
+defined('_JEXEC') or die('Restricted access');
+?>
+<div class="browserUploader">
+	<i class="popup-arrow"></i>
+	<div class="uploadContent">
+
+		<div class="uploadForm">
+
+			<div class="uploadInfo">
+				<p><?php echo JText::_('COM_EASYBLOG_MM_UPLOADING_TO'); ?><span class="uploadPath"></span>.<br/><?php echo JText::_('COM_EASYBLOG_MM_CAN_UPLOAD_TO'); ?> <span class="uploadSize"></span><?php echo JText::_('COM_EASYBLOG_MM_CAN_UPLOAD_PER_FILE'); ?></p>
+			</div>
+
+			<div class="uploadTypes">
+				<div class="uploadType upload-type-photos">
+					<i></i>
+					<span class="uploadTypeTitle"><?php echo JText::_('COM_EASYBLOG_MM_ADD_PHOTOS');?></span>
+					<span class="uploadTypeDescription"><span class="extensions"><?php echo JText::_('COM_EASYBLOG_MM_UPLOAD_SUPPORTS');?><span class="extensionList"></span>.</span></span>
+				</div>
+				<div class="uploadType upload-type-media">
+					<i></i>
+					<span class="uploadTypeTitle"><?php echo JText::_('COM_EASYBLOG_MM_ADD_AUDIO_VIDEO'); ?></span>
+					<span class="uploadTypeDescription">
+					<?php echo JText::_('COM_EASYBLOG_MM_ADD_AUDIO_VIDEO_DESC');?>
+					<span class="extensions"><?php echo JText::_('COM_EASYBLOG_MM_UPLOAD_SUPPORTS');?><span class="extensionList"></span>.</span>
+					</span>
+				</div>
+				<div class="uploadType upload-type-files">
+					<i></i>
+					<span class="uploadTypeTitle"><?php echo JText::_('COM_EASYBLOG_MM_ADD_FILE_DOCUMENTS');?></span>
+					<span class="uploadTypeDescription">
+					<?php echo JText::_('COM_EASYBLOG_MM_ADD_FILE_DOCUMENTS_DESC');?>
+					<span class="extensions"><?php echo JText::_('COM_EASYBLOG_MM_UPLOAD_SUPPORTS');?><span class="extensionList"></span>.</span>
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="uploadHistory">
+			<div class="uploadItemGroup">
+				<div class="uploadItem emptyItem"><?php echo JText::_( 'COM_EASYBLOG_MM_EMPTY_UPLOAD_HISTORY' );?></div>
+			</div>
+		</div>
+	</div>
+	<div class="uploadHeader clearfix">
+		<div class="uploadFormButton header-button active"><i></i><?php echo JText::_('COM_EASYBLOG_MM_ADD_MEDIA');?></div>
+		<div class="uploadHistoryButton header-button"><i></i><?php echo JText::_('COM_EASYBLOG_MM_MY_UPLOADS');?></div>
+	</div>
+</div>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" method="upgrade" group="j2store">
+	<name>Offline Payments</name>
+	<version>1.0</version>
+	<creationDate>Jan 2012</creationDate>
+	<author>Weblogicx India</author>
+	<authorEmail>support@j2store.org</authorEmail>
+	<authorUrl>http://j2store.org</authorUrl>
+	<copyright>2010 Weblogicx India Private Limited</copyright>
+	<license>GNU General Public License v2</license>
+	<description>This plugin enables offline payments</description>
+	
+	<files>
+		<filename plugin="payment_offline">payment_offline.php</filename>
+		<filename>index.html</filename>
+		<folder>payment_offline</folder>	
+	</files>	
+	
+<config>
+	<fields name="params">
+  	  <fieldset name="basic">
+       <field name="enable_cod" type="radio" default="1" label="Offline Accept COD" description="Offline Accept COD Desc">
+		  <option value="0">J2STORE_NO</option>
+		  <option value="1">J2STORE_YES</option>
+		</field>
+		<field name="enable_check" type="radio" default="1" label="Offline Accept Checks" description="Offline Accept Checks Desc">
+		  <option value="0">J2STORE_NO</option>
+		  <option value="1">J2STORE_YES</option>
+		</field>
+		<field name="enable_moneyorder" type="radio" default="1" label="Offline Accept Money Orders" description="Offline Accept Money Orders Desc">
+		  <option value="0">J2STORE_NO</option>
+		  <option value="1">J2STORE_YES</option>
+		</field>
+		<field name="enable_wire" type="radio" default="1" label="Offline Accept Wire" description="Offline Accept Wire Desc">
+		  <option value="0">J2STORE_NO</option>
+		  <option value="1">J2STORE_YES</option>
+		</field>
+		<field name="enable_other" type="radio" default="1" label="Offline Accept Other" description="Offline Accept Other Desc">
+		  <option value="0">J2STORE_NO</option>
+		  <option value="1">J2STORE_YES</option>
+		</field>
+		<field name="articleid" type="text" size="10" default="" label="Offline Article Number" description="Offline Article Number Desc"/>
+	</fieldset>
+  </fields>	
+</config>			
+</extension>

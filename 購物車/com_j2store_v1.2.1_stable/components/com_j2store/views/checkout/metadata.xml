@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: metadata.xml 8178 2010-09-09 05:39:47Z eddieajau $ -->
+<metadata>
+	<view title="Checkout" hidden="true">
+		<message><![CDATA[Link to Checkout - hidden.]]></message>
+	</view>
+</metadata>

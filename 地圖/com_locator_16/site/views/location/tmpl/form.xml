@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Location Submission Layout">
+		<message>
+			<![CDATA[Location Submission Layout]]>
+		</message>
+	</layout>
+	<state>
+		<name>Location Submission Layout</name>
+		<description>Location Submission Layout</description>
+			<include path="state" source="/components/com_locator/views/location/tmpl/_ml_form.xml" /> 
+		<params>
+			
+			<param name="publishautomatically" type="list" default="0" label="Publish Automatically?" description="Use this option to publish the submitted locations automatically.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>		
+			<param name="allownogeo" type="list" default="0" label="Allow for ungeocoded addresses?" description="This allows users to submit locations that cannot be geocoded.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			<param name="recaptcha" type="list" default="0" label="Display ReCaptcha?" description="">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			<param name="recaptcha_public" type="text" label="Recaptcha Public Key" />
+			<param name="recaptcha_private" type="text" label="Recaptcha Private Key" />
+		</params>
+		
+		<fields name="params" addfieldpath="/administrator/components/com_locator/elements" >
+			<fieldset name="basic" label="Basic Settings">
+				<field name="publishautomatically" type="list" default="0" label="Publish Automatically?" description="Use this option to publish the submitted locations automatically.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>		
+				<field name="allownogeo" type="list" default="0" label="Allow for ungeocoded addresses?" description="This allows users to submit locations that cannot be geocoded.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="recaptcha" type="list" default="0" label="Display ReCaptcha?" description="">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="recaptcha_public" type="text" label="Recaptcha Public Key" />
+				<field name="recaptcha_private" type="text" label="Recaptcha Private Key" />		
+			</fieldset>
+		</fields>
+			
+	</state>
+</metadata>

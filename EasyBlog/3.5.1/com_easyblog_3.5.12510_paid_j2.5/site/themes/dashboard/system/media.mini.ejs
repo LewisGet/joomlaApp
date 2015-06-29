@@ -1,0 +1,62 @@
+<?php
+/**
+ * @package		EasyBlog
+ * @copyright	Copyright (C) 2010 Stack Ideas Private Limited. All rights reserved.
+ * @license		GNU/GPL, see LICENSE.php
+ *
+ * EasyBlog is free software. This version may have been modified pursuant
+ * to the GNU General Public License, and as distributed it includes or
+ * is derivative of works licensed under the GNU General Public License or
+ * other free or open source software licenses.
+ * See COPYRIGHT.php for copyright notices and details.
+ */
+defined('_JEXEC') or die('Restricted access');
+?>
+
+<div class="browserHeader uploader">
+	<div class="headerTitle"></div>
+
+	<div class="headerButtons">
+		<ul class="optionButtons reset-ul float-li">
+			<@ if (showUploadButton) { @>
+			<li class="uploadButtonContainer">
+				<button class="uploadButton buttons" type="button">
+					<i></i>
+					<?php echo JText::_( 'COM_EASYBLOG_UPLOAD_IMAGES' ); ?>
+				</button>
+			</li>
+			<@ } @>
+			<li class="openMediaManagerButtonContainer">
+				<button class="openMediaManagerButton buttons" type="button">
+					<i></i>
+					<span class="openTitle"><?php echo JText::_( 'COM_EASYBLOG_MM_OPEN' ); ?></span>
+					<span class="loadingTitle"><?php echo JText::_( 'COM_EASYBLOG_MM_LOADING' ); ?></span>
+				</button>
+				<span class="ui-toolnote">
+					<i></i>
+					<b><?php echo JText::_( 'COM_EASYBLOG_MEDIA_MANAGER' ); ?></b>
+					<span><?php echo JText::_('COM_EASYBLOG_MM_DESCRIPTION'); ?></span>
+				</span>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="browserContent">
+
+	<div class="browserItemGroup clearfix"></div>
+
+	<div class="browserMessageGroup">
+		<div class="browserMessage noImages">
+			<?php echo JText::_( 'COM_EASYBLOG_MM_NO_IMAGES_YET' );?>
+		</div>
+
+		<div class="browserMessage uploadError">
+			<?php echo JText::_( 'COM_EASYBLOG_MM_UPLOAD_ERROR' );?>
+			<ul class="uploadErrorFiles reset-ul"></ul>
+			<button class="buttons hideUploadMessage" type="button">
+				<?php echo JText::_( 'OK' ); ?>
+			</button>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Standard Single Tag Layout">
+		<message>
+			<![CDATA[STANDARD Tag LAYOUT DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>Standard Tag Layout</name>
+		<description>Standarad Tag Layout</description>
+		<url addpath="/administrator/components/com_locator/elements">
+			<param name="id" type="tag" default="0" label="Select Tag" description="A tag" />
+		</url>
+		<params>
+		</params>
+	</state>
+</metadata>

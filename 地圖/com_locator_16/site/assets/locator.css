@@ -1,0 +1,202 @@
+/**locator.css components/com_locator/assets/locator.css */
+
+#locator_map_legend span.locator_icon img{
+vertical-align:middle;
+}
+
+ul.locator_legend{
+	clear:left;
+}
+ul.locator_legend li{
+	float:left;
+}
+
+ul.locator_legend {
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.locator_legend_list li{
+	background-image:none !important;
+}
+
+ul.locator_legend_list{
+	list-style:none;
+	padding-left:0px;
+}
+
+ul.locator_legend_list li img{
+	vertical-align:middle;
+	border:0;
+}
+
+.com_locator_forms span.label{
+	margin-right:3px;
+}
+
+.tag_group .label{
+	font-weight:bold;
+}
+
+.locator_combined_directions{
+	width:100%;
+	margin-top:10px;
+	clear:left;
+}
+
+.locator_combined,.combined{
+	float:left;
+	margin-right:0px;
+	overflow:auto;
+}
+
+.locator_combined_gmap{
+	width:550px;
+	height:500px;
+	float:left;
+}
+
+.locator_combined .com_locator_entry{
+
+}
+
+div#locator_map_canvas {
+	
+}
+
+div.locator_item_map{
+	margin:5px;
+}
+
+.locator_back{
+	float:right;
+}
+
+span.pagination{
+	display:block;
+	margin-top:20px;
+	clear:both;
+}
+
+.com_locator_entry{
+	border-bottom: 1px solid #EEEEEE;
+	margin-right:5px;
+}
+
+h2.com_locator_title a{
+font-size:14px !important;
+}
+
+.locator_form .required{
+	color:red;	
+}
+
+div#location_results_wrapper{
+	overflow:auto;
+	margin-bottom:20px;
+}
+
+div.com_locator_entry .line_item{
+	
+}
+
+#system-readmore{
+	display:none;	
+}
+
+.locator_columns{
+	width:50%;
+	float:left;
+	height:125px;
+}
+
+div.locator_forms{
+	padding:5px;
+}
+
+#radius.inputbox{
+	margin-top:3px;
+}
+
+.locator_forms .label{
+	width:200px;
+	text-align:left;
+	float:left;
+}
+
+.locator_form{
+	border: 1px solid #eee;
+	margin-bottom:5px;
+	overflow:auto;
+}
+
+.popupWindow *{
+	margin:0;
+	padding:0;
+}
+
+/* keep the title from the close box */
+.popupWindow h2.com_locator_title{
+	margin-top:8px;
+}
+
+
+
+.com_locator_entry h2.com_locator_title{
+margin:2px 0px 2px 0px !important;
+}
+
+
+.locator_form .inner {
+	padding:5px;
+}
+
+.locator_forms .inputbox{
+	width:200px;
+	text-align:left;
+	float:left;
+}
+
+.locator_pagination ul li{
+	display:inline;
+}
+
+#locator_pagination{
+	float:left;
+	width:100%;
+}
+
+#locator_pagination{
+margin-top: 10px;
+padding-top: 10px;
+border-top: 1px solid #eee;
+}
+
+#locator_pagination ul.pagination{
+list-style:none;
+margin:0;
+padding:0;
+margin-left: auto;
+margin-right: auto;
+}
+#locator_pagination ul.pagination li{
+	float:left;
+}
+
+#locator_pagination .limit{
+margin-left: auto;
+margin-right: auto;
+width: 30%;
+}
+
+#locator_map_legend{
+overflow:auto;
+margin-top:10px;
+padding-top:10px;
+}
+
+#locator_map_legend li{
+margin-right:10px;
+}

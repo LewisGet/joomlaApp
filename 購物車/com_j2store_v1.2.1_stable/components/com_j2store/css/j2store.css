@@ -1,0 +1,396 @@
+.center {
+	text-align: center;
+}
+
+#container {
+	background: #fff;
+	margin: 10px auto 0 auto;
+	padding: 1em;
+	width: auto;
+	margin-left: 10px;
+}
+
+table#cart {
+	border-collapse: collapse;
+	margin-bottom: 1em;
+	width: 100%;
+}
+
+table#cart th {
+	background: #0055b3;
+	color: #fff;
+	text-align: left;
+	white-space: nowrap;
+}
+
+table#cart th,table#cart td {
+	padding: 5px 10px;
+}
+
+table#cart tr td {
+	background: #fff;
+	border: 1px solid #ccc;
+}
+
+table#cart tr.cart_subtotal td {
+	border-bottom: 1px solid #ccc;
+}
+
+table#cart tfoot tr td {
+	border: none;
+}
+
+table#cart tr.row0 td {
+	background: #EFEFEF;
+}
+
+/*  set the width and height of cart images here*/
+table#cart tr td #itemImgSmall {
+	width: 80px;
+}
+
+table#cart tr td #itemImgMedium {
+	width: 100px;
+}
+
+table#cart tr td #itemImgLarge {
+	width: 130px;
+}
+/*  set the width and height of cart images here - for small popup with only images*/
+#j2store_minicart_title_image #itemImgSmall {
+	width: 200px;
+}
+#j2store_minicart_title_image #itemImgMedium {
+	width: 250px;
+}
+#j2store_minicart_title_image #itemImgLarge {
+	width: 300px;
+}
+
+table#cart a div.j2storeCartRemove {
+	background: url("../images/remove-roll.png") no-repeat scroll 0 0
+		transparent;
+	height: 18px;
+	width: 18px;
+}
+
+table#cart a:hover div.j2storeCartRemove {
+	background: url("../images/remove-over.png") no-repeat scroll 0 0
+		transparent;
+}
+
+table#cart input.button, .j2store_minicart_section_right input.button{
+	background: none repeat scroll 0 0 #9099A3;
+	border: 1px solid #9099A3;
+	border-radius: 3px 3px 3px 3px;
+	color: #FFFFFF;
+	padding: 5px 10px;
+}
+
+.add_to_cart .addcart,table#cart_actions input.button,table#cart_actions .begin_checkout,#j2store_checkout_table input.button,.j2storeCheckout input.button,.j2store_order_review input.button
+	{
+	background: none repeat scroll 0 0 #DD4A38;
+	border: 1px solid #DD4A38;
+	border-radius: 3px 3px 3px 3px;
+	box-shadow: 0 2px 5px rgba(1, 1, 1, 0.3);
+	color: #FFFFFF;
+	padding: 7px 20px;
+	margin-top: 10px;
+	cursor: pointer;
+	/*text-shadow: 0 1px 5px #672101; */
+}
+
+.product_quantity_input input {
+	width: 30px;
+}
+
+#j2store_checkout_table input[type="email"],#j2store_checkout_table input[type="text"],#j2store_checkout_table input[type="password"]
+	{
+	border: 1px solid #A2A2A6;
+	border-radius: 3px 3px 3px 3px;
+	box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1) inset;
+	font-size: 14px;
+	padding: 7px 5px;
+}
+
+table.j2store_orders {
+	border: 1px solid #ccc;
+	font-weight: bold;
+}
+
+table.j2store_orders th {
+	background: #006b68;
+	color: #fff;
+	text-align: left;
+	white-space: nowrap;
+}
+
+tr.j2store_table_footer td {
+	border-top: 1px solid #ccc;
+}
+
+/* Checkout 
+---------------------------------------------------*/
+table.adminlist thead th {
+	background: #f1f1f1
+}
+
+.cartitems table.adminlist td {
+	border: none;
+	background: url(../images/rowSeparator.png) repeat-x left top;
+	padding: 20px 10px;
+	text-align: left
+}
+
+.address_form {
+	margin: 20px 0
+}
+
+table.adminlist thead th {
+	background: none;
+	text-align: left;
+	background: url(../images/rowSeparator.png) repeat-x left bottom;
+	padding: 0 0 20px 0
+}
+
+#j2slogintable tr,#j2slogintable td {
+	border: 2px solid #ffffff;
+	padding: 5px;
+}
+
+#j2store_order_item table.orderDetailTable td,#j2store_order_item table.orderDetailTable th
+	{
+	text-align: center;
+}
+
+#j2store_order_item table.orderDetailTable td.j2store_total {
+	text-align: right;
+}
+
+#j2store_tos.invalid {
+	background: #ff0000;
+	border: 1px solid #ff0000;
+	color: #ff0000;
+}
+
+#checkbox_tos .invalid a {
+	color: #ff0000;
+	font-weight: bold;
+}
+
+#j2storeCheckout_table .register_separator {
+	
+}
+
+/********************/
+Orders /********************/  
+
+#j2store_order_info table {
+	background-color: #E6EFF3;
+	padding: 10px;
+}
+
+#j2store_order_info table.orders tr,#items_info table.cart_order tr {
+	
+}
+
+#j2store_order_info table.orders tr.order_info td,#j2store_order_info table.orders tr.payment_info td,#j2store_order_info table.orders tr td,#items_info table.cart_order tr td
+	{
+	padding: 5px;
+}
+
+table.paymentTable {
+	
+}
+
+table.orders,table.cart_order {
+	background-color: #E6EFF3;
+	padding: 10px;
+	width: 550px;
+}
+
+.j2storeCheckout {
+	width: 100%;
+	float: left;
+}
+
+.billing_shipping_fields {
+	float: left;
+	width: 45%;
+	margin-right: 1%;
+	border: 1px solid #ccc;
+}
+
+.shipping_payment_info_div_master {
+	float: right;
+	width: 51%;
+	border: 1px solid #ccc;
+}
+
+.order_summar,.order_comment {
+	float: left;
+	width: 100%;
+}
+
+.shipping_info {
+	
+}
+
+.payment_info {
+	
+}
+
+.form-list ul,.form-list ol,.form-list li {
+	list-style: none outside none;
+	clear: both;
+}
+
+.form-list {
+	text-align: left;
+}
+
+.form-list li {
+	clear: both;
+}
+
+.form-list label {
+	color: #666666;
+	float: left;
+	font-weight: bold;
+	position: relative;
+	z-index: 0;
+}
+
+.form-list label em {
+	color: #EB340A;
+	float: right;
+	font-style: normal;
+	position: absolute;
+	right: -8px;
+	top:
+}
+
+.form-list .field {
+	float: left;
+}
+
+#j2store_billing_section .form-list .input-box {
+	width: 263px;
+}
+
+#j2store_billing_section .form-list select {
+	width: 264px;
+}
+
+#j2store_billing_section .form-list .field,#j2store_billing_section .form-list .input-box
+	{
+	width: 135px;
+}
+
+#j2store_billing_section .form-list input.input-text {
+	width: 120px;
+}
+
+#j2store_billing_section .form-list select {
+	width: 130px;
+}
+
+#j2store_billing_section .form-list li.wide .input-box {
+	width: 260px;
+	margin-bottom: 5px;
+}
+
+#j2store_billing_section .form-list li.wide input.input-text {
+	width: 255px;
+}
+
+#j2store_billing_section .form-list li.wide select {
+	width: 265px;
+}
+
+#j2store_billing_section input.input-text {
+	border: 1px solid #aaa;
+	border-color: #aaa #ccc #ccc #ccc;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	padding: 4px 4px;
+}
+
+#j2store_shipping_section .form-list .input-box {
+	width: 263px;
+}
+
+#j2store_shipping_section .form-list select {
+	width: 264px;
+}
+
+#j2store_shipping_section .form-list .field,#j2store_shipping_section .form-list .input-box
+	{
+	width: 135px;
+}
+
+#j2store_shipping_section .form-list input.input-text,#j2store_shipping_section .form-list input.input-text1
+	{
+	width: 120px;
+}
+
+#j2store_shipping_section .form-list select {
+	width: 130px;
+}
+
+#j2store_shipping_section .form-list li.wide .input-box {
+	width: 260px;
+	margin-bottom: 5px;
+}
+
+#j2store_shipping_section .form-list li.wide input.input-text,#j2store_shipping_section .form-list li.wide input.input-text1
+	{
+	width: 255px;
+}
+
+#j2store_shipping_section .form-list li.wide select {
+	width: 265px;
+}
+
+#j2store_shipping_section input.input-text,#j2store_shipping_section input.input-text1
+	{
+	border: 1px solid #aaa;
+	border-color: #aaa #ccc #ccc #ccc;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	padding: 4px 4px;
+}
+
+#j2store_shipping_section .valid-fail {
+	border-color: #ff0000 !important;
+}
+
+/*minicart*/
+.j2store_minicart_product_header {
+	clear: both;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.j2store_addtocart_mini {float: left; padding: 5px;}
+.j2store_minicart_section_left { float: left;}
+.j2store_minicart_section_right {width: 20%; float: right;}
+
+
+.j2store_addtocart_mini .j2store_minicart_product_name
+ {
+	font-weight: bold;
+	clear: both;
+}
+
+.j2store_minicart_section_right ul {
+	margin-top: 20px;	
+	margin-left: 10px;
+	}
+	
+.j2store_minicart_section_right li {
+	list-style-type:none;
+	margin-bottom: 5px;
+	background: none;	
+	}

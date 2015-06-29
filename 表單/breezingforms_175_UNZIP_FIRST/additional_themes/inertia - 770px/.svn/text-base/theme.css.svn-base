@@ -1,0 +1,672 @@
+/*
+
+ ########## BreezingForms 1.7.1 QuickMode ##########
+
+ @autor crosstec.de
+
+ @copyright Copyright (C) 2010 crosstec.de. All rights reserved.
+ 
+ Original CSS by Markus Bopp
+ 
+ Inertia Theme by James Taylor
+ 
+ 
+
+ ########################################
+
+*/
+/*Additional Styles----------------*/
+/*General --------------------*/
+
+.bfQuickMode h1,h2,h3,h4{
+	font-weight:bold;
+	color:#f90;
+	
+	}
+	
+.bfQuickMode h1{
+	color:#0c0;
+	font-size:28px;
+	margin-left:20px;
+	line-height:28px;
+	}	
+	
+.bfQuickMode h2{
+	color:#f90;
+	font-size:20px;
+	margin-left:25px;
+	font-weight:normal;
+	}
+	
+.bfQuickMode h3{
+	color:#f90;
+	font-size:18px;
+	margin-left:0px;
+	font-weight:normal;
+	}	
+	
+.bfQuickMode h4{
+	font-weight:bold;
+	color:#f90;
+	
+	}	
+	
+.bfQuickMode p{
+	line-height:24px;
+	letter-spacing:0.02em;}	
+	
+ul li{
+	list-style-type:square;
+	}	
+.bfQuickMode a:link{
+	color:#0cf;
+	text-decoration:underline;
+	}	
+.bfQuickMode a:hover{
+	color:#0CF;
+	text-decoration:none;
+	}		
+
+
+/* ##### General BreezingForms styles ##### */
+
+
+
+.bfQuickMode {
+
+    width: 750px;
+
+    padding: 0px;
+
+    margin: 0px;
+	
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border:1px solid #000;
+	padding:10px;
+	background-image:url(img/bubbles.jpg);
+	background-repeat:repeat-y;
+	color:#f90;
+	
+
+}
+
+
+
+.bfQuickMode fieldset {
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+
+.bfQuickMode .bfFieldset-tl { }
+
+.bfQuickMode .bfFieldset-tr {}
+
+.bfQuickMode .bfFieldset-t { height: 17px; margin: 0 17px; }
+
+
+
+.bfQuickMode .bfFieldset-l { }
+
+.bfQuickMode .bfFieldset-r {  }
+
+
+
+.bfQuickMode .bfFieldset-m {
+
+    margin: 0 17px;
+	padding:10px;
+    padding-top: 25px;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border:1px solid #333;
+
+    background-color: #2a2a2a;
+	background-image:url(img/fieldsetBG.png);
+	background-repeat:repeat-x;
+
+
+}
+
+
+
+.bfQuickMode .bfFieldset-bl {  }
+
+.bfQuickMode .bfFieldset-br {}
+
+.bfQuickMode .bfFieldset-b { height: 17px;margin: 0 17px; }
+
+
+
+.bfQuickMode fieldset {
+
+    border: none;
+
+    padding: 0;
+
+    margin: 0;
+
+    position: relative;
+
+}
+
+
+
+.bfQuickMode legend {
+
+    font-size: 120%;
+
+    color: #fff;
+
+}
+
+
+
+.bfQuickMode .bfLegend-l {
+
+    padding: 0;
+
+    background: none;
+
+    position: absolute;
+
+    top: -39px;
+
+    left: 0;
+
+}
+
+
+
+.bfQuickMode .bfLegend-l, .bfQuickMode .bfLegend-r, .bfQuickMode .bfLegend-m { display: inline-block; line-height: 26px; height: 26px; }
+
+
+
+.bfQuickMode .bfLegend-l { background: transparent url('img/bg_legend-l.png') 0 0 no-repeat; }
+
+.bfQuickMode .bfLegend-r { background: transparent url('img/bg_legend-r.png') 100% 100% no-repeat; }
+
+.bfQuickMode .bfLegend-m { background: transparent url('img/bg_legend-m.png') 0 0 repeat-x; margin: 0 20px; }
+
+
+
+.bfQuickMode p.bfElemWrap {
+
+    padding: 5px;
+
+    margin: 0px 0px 10px 0px;
+
+    border-radius: 5px;
+
+    -moz-border-radius: 5px;
+
+    -webkit-border-radius: 5px;
+
+}
+
+
+
+.bfQuickMode span.bfElemWrap {
+
+    padding: 5px;
+
+    margin: 0px 10px 10px 0px;
+
+    border-radius: 5px;
+
+    -moz-border-radius: 5px;
+
+    -webkit-border-radius: 5px;
+	
+
+}
+
+
+
+/* ##### inline ##### */
+
+
+
+.bfQuickMode .bfWrapperInline .bfFieldset-tl, .bfQuickMode .bfWrapperBlock .bfWrapperBlock .bfFieldset-tl { }
+
+.bfQuickMode .bfWrapperInline .bfFieldset-tr, .bfQuickMode .bfWrapperBlock .bfWrapperBlock .bfFieldset-tr { }
+
+.bfQuickMode .bfWrapperInline .bfFieldset-t, .bfQuickMode .bfWrapperBlock .bfWrapperBlock .bfFieldset-t { height: 17px;margin: 0 17px; }
+
+
+
+.bfQuickMode .bfWrapperInline .bfFieldset-l, .bfQuickMode .bfWrapperBlock .bfWrapperBlock .bfFieldset-l { }
+
+.bfQuickMode .bfWrapperInline .bfFieldset-r, .bfQuickMode .bfWrapperBlock .bfWrapperBlock .bfFieldset-r { }
+
+
+
+.bfQuickMode .bfWrapperInline .bfFieldset-m, .bfQuickMode .bfWrapperBlock .bfWrapperBlock .bfFieldset-m {
+
+    margin: 0 17px;
+
+    padding-top: 25px;
+
+    background: #2a2a2a;
+	background-image:url(img/fieldsetBG.png);
+	background-repeat:repeat-x;
+
+}
+
+
+
+.bfQuickMode .bfWrapperInline .bfFieldset-bl, .bfQuickMode .bfWrapperBlock .bfWrapperBlock .bfFieldset-bl { }
+
+.bfQuickMode .bfWrapperInline .bfFieldset-br, .bfQuickMode .bfWrapperBlock .bfWrapperBlock .bfFieldset-br { }
+
+.bfQuickMode .bfWrapperInline .bfFieldset-b, .bfQuickMode .bfWrapperBlock .bfWrapperBlock .bfFieldset-b { height: 17px; margin: 0 17px; }
+
+
+
+.bfQuickMode fieldset.bfInline {
+
+    width: 100%;
+
+    max-width: 110%;
+
+}
+
+
+
+.bfQuickMode fieldset fieldset legend {
+
+    background: none;
+
+    color: #fff;
+
+    font-size: 100%;
+
+    font-weight: normal;
+
+}
+
+
+
+.bfQuickMode fieldset fieldset .bfLegend-l { background: transparent url('img/bg_inlinelegend-l.png') 0 0 no-repeat; }
+
+.bfQuickMode fieldset fieldset .bfLegend-r { background: transparent url('img/bg_inlinelegend-r.png') 100% 100% no-repeat; }
+
+.bfQuickMode fieldset fieldset .bfLegend-m { background: transparent url('img/bg_inlinelegend-m.png') 0 0 repeat-x; margin: 0 20px; }
+
+
+
+.bfQuickMode fieldset.bfInline p {
+
+    padding: 5px;
+
+    margin: 0px 0px 10px 0px;
+
+}
+
+
+
+.bfQuickMode .bfInline .bfLabelLeft .bfElementGroupNoWrap input[type='text'] {
+
+    width: 50%;
+
+}
+
+
+
+/* ##### Input Fields ##### */
+
+
+
+.bfQuickMode input[type=text], .bfQuickMode input[type=password], .bfQuickMode textarea, .bfQuickMode select {
+
+    border: 1px solid #333;
+
+    padding: 2px;
+
+    line-height: normal;
+
+    background: #fff;
+	background-image:url(img/input.gif);
+	background-repeat:repeat-x;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	color:#fff;
+	letter-spacing:1px;
+	
+
+
+}
+
+
+
+.bfQuickMode textarea:hover, .bfQuickMode input[type='text']:hover, .bfQuickMode input[type='password']:hover, .bfQuickMode select:hover {
+
+    border-color: #f90;
+
+}
+
+
+
+.bfQuickMode textarea:focus, .bfQuickMode input[type='text']:focus, .bfQuickMode input[type='password']:focus, .bfQuickMode select:focus {
+
+    border-color: #f90; background: #272727; 
+
+}
+
+
+
+.bfQuickMode input[type='button'], .bfQuickMode input[type='submit'], .bfQuickMode input[type='checkbox'], .bfQuickMode input[type='image'], .bfQuickMode input[type='radio'], .bfQuickMode input[type='reset'], .bfQuickMode select, .bfQuickMode button {
+
+    cursor: pointer;
+
+}
+
+
+
+.bfQuickMode input[type='hidden'] { display: none; }
+
+.bfQuickMode textarea{
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:1px solid #666;
+	background-image:url(img/textArea.gif);
+	background-repeat:repeat-x;
+	background-color:#181818;
+	color:#fff;
+	padding-left:5px;
+	padding-right:5px;
+	font-size:12px;	
+	letter-spacing:1px;
+	}
+	
+.bfQuickMode select option{
+	background-color:#181818;		
+	color:#fff;
+	}
+
+.bfQuickMode select {
+	
+	background-color:#181818;
+	color:#fff;
+	border-radius:0px;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+	padding:0px;
+	border:1px solid #666;
+	
+	}	
+
+
+
+/* ##### Rollover ##### */
+
+
+
+.bfQuickMode p.bfRolloverBg, .bfQuickMode span.bfRolloverBg {
+
+    border: 1px solid #e9ddaf;
+
+    padding: 4px !important;
+	background:none;
+    background-image:none;
+	background-color:none;
+
+    background-position: 0 0 !important;
+
+    background-repeat: repeat-x !important;
+	
+
+}
+
+
+
+/* ##### page intro ##### */
+
+
+
+.bfQuickMode .bfPageIntro {
+
+    padding: 5px;
+
+    margin: 0px 0px 10px 0px;
+
+    background: none;
+
+    border: none;
+
+    font-weight: normal;
+
+}
+
+
+
+/* ##### error messages #####*/
+
+
+
+.bfQuickMode .bfErrorMessage {
+
+    background: #ffeded;
+
+    font-weight: bold;
+
+    float: none;
+
+    display: block;
+
+    color: red;
+
+    border-radius: 5px;
+
+    -moz-border-radius: 5px;
+
+    -webkit-border-radius: 5px;
+
+}
+
+
+
+/* ##### max length message ##### */
+
+
+
+.bfMaxLengthCounter {
+
+    color: #0071bc;
+
+}
+
+
+
+/* ##### tooltip ##### */
+
+
+
+.bfQuickMode span.hasTip {
+
+    background: transparent url('img/icon_info.png') right top no-repeat;
+
+}
+
+
+
+/* ##### Section Description #####*/
+
+
+
+.bfQuickMode .bfSectionDescription {
+
+    background: none;
+
+    border: none;
+
+    font-weight: normal;
+
+}
+
+
+
+.bfQuickMode .bfSectionDescription p {
+
+    background: none;
+
+    border: none;
+
+}
+
+
+
+/* ##### required ##### */
+
+
+
+.bfQuickMode .bfRequired {
+
+    background: none;
+
+    font-size: 100%;
+
+    font-weight: bold;
+
+    border: none;
+
+    padding: 0px 0px 0px 5px;
+
+    margin: 0px;
+
+    color: #f00;
+
+    float: none;
+
+}
+
+
+
+/* ##### buttons ##### */
+
+
+
+/* OPTIONAL BUTTON STYLES for applying custom look and feel: */
+
+
+
+.bfQuickMode button { 
+
+    padding-left: 20px;
+	padding-right:15px;
+
+    margin-right:5px; 
+
+    font-size: 12px;
+
+    font-weight:bold; 
+
+    text-align: center; 
+
+    background: transparent url('img/bg_btn.png') no-repeat right -92px !important;
+
+    position: relative;
+
+    border: 0 !important; 
+
+    cursor: pointer;
+
+    overflow: visible; /* removes extra side padding in IE */
+
+}
+
+
+
+.bfQuickMode button span {
+
+    padding: 5px 0 0 15px; 
+
+    height:26px; 
+
+    background: transparent url('img/bg_btn.png') no-repeat left top !important; 
+
+    color:#fff;
+
+    position: relative;
+
+    display: block; 
+
+    white-space: nowrap;
+
+}
+
+
+
+.bfQuickMode button::-moz-focus-inner {
+
+    border: none;  /* overrides extra padding in Firefox */
+
+}
+
+
+
+.bfQuickMode button:hover, button.submitBtnHover { /* the redundant class is used to apply the hover state with a script */
+
+    background-position: right -136px !important; 
+
+}
+
+
+
+.bfQuickMode button:hover span, button.submitBtnHover span {
+
+    background-position: 0 -46px !important;
+
+}
+
+
+
+.bfQuickMode .bfNextButton, .bfQuickMode .bfSubmitButton, .bfQuickMode .bfCancelButton {
+
+    float: right;
+
+}
+
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+    /* Safari and Google Chrome only - fix margins */
+
+    .bfQuickMode button span {
+
+        margin-top: -1px;
+
+    }
+
+}
+
+
+
+.bfQuickMode .bfPrevButton {
+
+    float: left
+
+}
+
+
+
+.bfQuickMode button.bfCalendar {
+
+    height: 26px;
+
+    margin: 0px 0px 0px 5px;
+
+}
+
+
+	

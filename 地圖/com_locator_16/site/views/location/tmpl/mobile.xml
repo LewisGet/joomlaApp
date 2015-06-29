@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Single Location - Mobile Layout">
+		<message>
+			<![CDATA[Single Location - Mobile Layout]]>
+		</message>
+	</layout>
+	<state>
+		<name>Single Location - Mobile Layout</name>
+		<description>Single Location - Mobile Layout</description>
+		<url addpath="/administrator/components/com_locator/elements">
+			<param name="id" type="text" default="" label="Location ID" description="The ID# location you want to display" />
+		</url>
+		<params>
+		
+			<param type="textarea" name="address_template" rows="5" cols="20" default="{title}{distance}[br]{address}[br]{address2}[br] {city}, {state} {postalcode}[br]{phone}[br]{link}[br]{description}[br]{taglist}" size="25" label="Item address format" description="The format of the address. Fields are lowercase and in curly brackets. HTML Tags are in square brackets, (E.g. [br][p][/p])  Items with a [br] tag directly after them (no spaces) that are blank will also omit the the [br] tag"/>			
+			<param type="textarea" name="map_address_template" rows="5" cols="20" default="{title}{distance}[br]{address}[br]{address2}[br] {city}, {state} {postalcode}[br]{phone}[br]{link}[br]{description}[br]{taglist}" size="25" label="Map popup item address format" description="The format of the address and information that appears in the Google Map popup window. Fields are lowercase and in curly brackets. HTML Tags are in square brackets, (E.g. [br][p][/p])  Items with a [br] tag directly after them (no spaces) that are blank will also omit the the [br] tag"/>			
+						
+			<param name="linktarget" type="list" default="1"  label="Open link in new window?" description="This will set the entry's link to open in a new window.  This controls only the behavior of the item's link field. ">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			
+			<param name="linkhttp" type="list" default="1"  label="Add HTTP to link?" description="This add http:// to the link ">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			
+			<param name="showtaglist" type="list" default="0" label="Show list of tags?" description="">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>							
+			
+			<param name="triggercontentplugin" type="list" default="0"  label="Trigger content plugins?" description="This will execute content preparation plugins on each directory entry.  May cause performance degradation with many plugins">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			
+		   	<param name="showmaponitempage" type="list" default="1" label="Show map on item page?" description="Shows a small map with the marker on the item page.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+
+			<param name="showmarkeronitempage" type="list" default="1" label="Popup marker on item page?" description="Shows a small marker info window in the map by default.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>			
+			
+			<param type="text" name="item_gmap_default_zoom" default="16" size="25" label="Item Page Map Zoom" description="Default Zoom of the map on the item page"/>
+			<param type="text" name="item_gmap_width" default="400" size="25" label="Item Page Map Width" description="Map width in pixels of the map displayed on the individual location's page (E.g: 500). "/>
+    		<param type="text" name="item_gmap_height" default="500" size="25" label="Item Page Map Height" description="Map height in pixels of the map displayed on the individual location's page (E.g: 500)." />
+			
+			<param name="defaultmapview" type="list" default="ROADMAP" label="Default Map View" description="Sets the default type of Google Map display">
+				<option value="ROADMAP">ROADMAP</option>
+				<option value="SATELLITE">SATELLITE</option>
+				<option value="HYBRID">HYBRID</option>
+				<option value="TERRAIN">TERRAIN</option>
+			</param>    		
+  
+			
+    		<param name="domhook" type="list" default="ondomready" label="DOM Load Event?" description="ADVANCED ONLY: This allows you to switch between the various page load events that we use to initialize the Google Map.  Try different settings here if your map does not display.">
+				<option value="ondomready">onDomReady (Joomla 1.5)</option>
+				<option value="domready">domready (Joomla 1.6)</option>
+				<option value="onload">Regular BODY onload event</option>
+			</param>		
+		</params>
+		
+		<fields name="params" addfieldpath="/administrator/components/com_locator/elements" >
+		
+			<fieldset name="basic" label="Basic Settings">
+			
+			<field name="id" type="text" default="" label="Location ID" description="The ID# location you want to display" />
+			
+			<field type="textarea" name="address_template" rows="5" cols="20" default="{title}{distance}[br]{address}[br]{address2}[br] {city}, {state} {postalcode}[br]{phone}[br]{link}[br]{description}[br]{taglist}" size="25" label="Item address format" description="The format of the address. Fields are lowercase and in curly brackets. HTML Tags are in square brackets, (E.g. [br][p][/p])  Items with a [br] tag directly after them (no spaces) that are blank will also omit the the [br] tag"/>			
+			<field type="textarea" name="map_address_template" rows="5" cols="20" default="{title}{distance}[br]{address}[br]{address2}[br] {city}, {state} {postalcode}[br]{phone}[br]{link}[br]{description}[br]{taglist}" size="25" label="Map popup item address format" description="The format of the address and information that appears in the Google Map popup window. Fields are lowercase and in curly brackets. HTML Tags are in square brackets, (E.g. [br][p][/p])  Items with a [br] tag directly after them (no spaces) that are blank will also omit the the [br] tag"/>			
+						
+			<field name="linktarget" type="list" default="1"  label="Open link in new window?" description="This will set the entry's link to open in a new window.  This controls only the behavior of the item's link field. ">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+			
+			<field name="linkhttp" type="list" default="1"  label="Add HTTP to link?" description="This add http:// to the link ">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+			
+			<field name="showtaglist" type="list" default="0" label="Show list of tags?" description="">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>							
+			
+			<field name="triggercontentplugin" type="list" default="0"  label="Trigger content plugins?" description="This will execute content preparation plugins on each directory entry.  May cause performance degradation with many plugins">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+			
+		   	<field name="showmaponitempage" type="list" default="1" label="Show map on item page?" description="Shows a small map with the marker on the item page.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+
+			<field name="showmarkeronitempage" type="list" default="1" label="Popup marker on item page?" description="Shows a small marker info window in the map by default.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>			
+			
+			<field type="text" name="item_gmap_default_zoom" default="16" size="25" label="Item Page Map Zoom" description="Default Zoom of the map on the item page"/>
+			<field type="text" name="item_gmap_width" default="400" size="25" label="Item Page Map Width" description="Map width in pixels of the map displayed on the individual location's page (E.g: 500). "/>
+    		<field type="text" name="item_gmap_height" default="500" size="25" label="Item Page Map Height" description="Map height in pixels of the map displayed on the individual location's page (E.g: 500)." />
+			
+			<field name="defaultmapview" type="list" default="ROADMAP" label="Default Map View" description="Sets the default type of Google Map display">
+				<option value="ROADMAP">ROADMAP</option>
+				<option value="SATELLITE">SATELLITE</option>
+				<option value="HYBRID">HYBRID</option>
+				<option value="TERRAIN">TERRAIN</option>
+			</field>    		
+    		<field name="domhook" type="list" default="domready" label="DOM Load Event?" description="ADVANCED ONLY: This allows you to switch between the various page load events that we use to initialize the Google Map.  Try different settings here if your map does not display.">
+				<option value="ondomready">onDomReady (Joomla 1.5)</option>
+				<option value="domready">domready (Joomla 1.6)</option>
+				<option value="onload">Regular BODY onload event</option>
+			</field>
+		</fieldset>
+		</fields>
+			
+	</state>
+</metadata>

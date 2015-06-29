@@ -1,0 +1,123 @@
+<?php
+// Heading
+$_['heading_title']           = '訂單';
+
+// Text
+$_['text_success']            = '成功：您已經修改訂單的設定！';
+$_['text_order_id']           = '訂單編號：';
+$_['text_invoice_no']         = '發票號碼：';
+$_['text_invoice_date']       = '發票日期：';
+$_['text_store_name']         = '商店名稱：';
+$_['text_store_url']          = '商店網址：';
+$_['text_customer']           = '客戶：';
+$_['text_customer_group']     = '客戶群組：';
+$_['text_email']              = '電子郵件：';
+$_['text_ip']                 = 'IP 位址：';
+$_['text_telephone']          = '電話：';
+$_['text_fax']                = '傳真：';
+$_['text_shipping_method']    = '運送方式：';
+$_['text_payment_method']     = '付款方式：';
+$_['text_total']              = '總計：';
+$_['text_reward']             = '紅利點數：';
+$_['text_order_status']       = '訂單狀態：';
+$_['text_comment']            = '註解：';
+$_['text_affiliate']          = '加盟：';
+$_['text_commission']         = '佣金：';
+$_['text_date_added']         = '訂單日期：';
+$_['text_date_modified']      = '修改日期：';
+$_['text_firstname']          = '名字';
+$_['text_lastname']           = '姓氏';
+$_['text_company']            = '公司：';
+$_['text_address_1']          = '地址 1：';
+$_['text_address_2']          = '地址 2：';
+$_['text_postcode']           = '郵遞區號：';
+$_['text_city']               = '城市：';
+$_['text_zone']               = '區域 (省、縣、市)：';
+$_['text_zone_code']          = '區域 (省、縣、市) 代碼：';
+$_['text_country']            = '國家：';
+$_['text_download']           = '下載訂單';
+$_['text_invoice']            = '發票';
+$_['text_to']                 = '收件者';
+$_['text_ship_to']            = '送貨地址 (如果是不同的地址)';
+$_['text_abandoned_orders']   = '已放棄訂單';
+$_['text_default']            = '預設';
+$_['text_wait']               = '請稍候！';
+$_['text_create_invoice_no']  = '建立發票號碼';
+$_['text_reward_add']         = '新增紅利點數';
+$_['text_reward_added']       = '成功：已新增紅利點數！';
+$_['text_reward_remove']      = '移除紅利點數';
+$_['text_reward_removed']     = '成功：已移除紅利點數！';
+$_['text_commission_add']     = '新增獎金';
+$_['text_commission_added']   = '成功：已新增獎金！';
+$_['text_commission_remove']  = '移除獎金';
+$_['text_commission_removed'] = '成功：已移除獎金！';
+$_['text_credit_add']         = '新增信用卡';
+$_['text_credit_added']       = '成功：已新增信用卡帳戶！';
+$_['text_credit_remove']      = '移除信用卡';
+$_['text_credit_removed']     = '成功：已移除信用卡帳戶！';
+$_['text_upload']             = '您的檔案已成功地上傳！';
+
+// Column
+$_['column_order_id']         = '訂單編號';
+$_['column_customer']         = '客戶';
+$_['column_status']           = '狀態';
+$_['column_date_added']       = '訂單日期';
+$_['column_date_modified']    = '修改日期';
+$_['column_total']            = '總計';
+$_['column_product']          = '商品';
+$_['column_model']            = '型號';
+$_['column_quantity']         = '數量';
+$_['column_price']            = '單價';
+$_['column_download']         = '下載名稱';
+$_['column_filename']         = '檔案名稱';
+$_['column_remaining']        = '剩餘下載次數';
+$_['column_comment']          = '備註';
+$_['column_notify']           = '已通知客戶';
+$_['column_action']           = '動作';
+
+// Entry
+$_['entry_store']             = '商店：';
+$_['entry_customer']          = '客戶：';
+$_['entry_customer_group']    = '客戶群組：';
+$_['entry_firstname']         = '名字';
+$_['entry_lastname']          = '姓氏';
+$_['entry_email']             = '電子郵件：';
+$_['entry_telephone']         = '電話：';
+$_['entry_fax']               = '傳真：';
+$_['entry_address']           = '選擇地址：';
+$_['entry_company']           = '公司：';
+$_['entry_address_1']         = '地址 1：';
+$_['entry_address_2']         = '地址 2：';
+$_['entry_city']              = '城市：';
+$_['entry_postcode']          = '郵遞區號：';
+$_['entry_country']           = '國家：';
+$_['entry_zone']              = '區域 (省、縣、市)：';
+$_['entry_zone_code']         = '區域 (省、縣、市) 代碼：';
+$_['entry_product']           = '選擇商品：';
+$_['entry_option']            = '選擇選項(s)：';
+$_['entry_quantity']          = '數量：';
+$_['entry_affiliate']         = '推薦會員：';
+$_['entry_order_status']      = '訂單狀態：';
+$_['entry_notify']            = '已通知客戶：';
+$_['entry_comment']           = '備註：';
+$_['entry_shipping']          = '運送方式：';
+$_['entry_payment']           = '付款方式：';
+
+// Error
+$_['error_permission']        = '警告：您沒有修改訂單的權限！';
+$_['error_firstname']         = '名字的長度必須介於 1 和 32 個字元之間！';
+$_['error_lastname']          = '姓氏的長度必須介於 1 和 32 個字元之間！';
+$_['error_email']             = '電子郵件地址可能無效！';
+$_['error_telephone']         = '電話的長度必須介於 3 和 32 個字元之間！';
+$_['error_password']          = '密碼的長度必須介於 3 和 20 個字元之間！';
+$_['error_confirm']           = '密碼與確認密碼結果不符！';
+$_['error_address_1']         = '地址 1 的長度必須介於 3 和 128 個字元之間！';
+$_['error_city']              = '城市的長度必須介於 3 和 128 個字元之間！';
+$_['error_postcode']          = '郵遞區號必須在這個國家的 2 和 10 個字元之間！';
+$_['error_country']           = '請選擇國家！';
+$_['error_zone']              = '請選擇區域！ (省、縣、市)';
+$_['error_upload']            = 'Upload required!';
+$_['error_filename']          = '檔案名稱的長度必須介於 3 和 128 個字元之間！';
+$_['error_filetype']          = '無效的檔案類型！';
+$_['error_action']            = '警告：無法完成此動作！';
+?>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="INTERNAL - DO NOT USE">
+		<message>
+			<![CDATA[INTERNAL - DO NOT USE]]>
+		</message>
+	</layout>
+	<state>
+		<name>INTERNAL - DO NOT USE</name>
+		<description>INTERNAL - DO NOT USE</description>
+		<url addpath="/administrator/components/com_locator/elements">
+			<param name="id" type="text" default="" label="Location ID" description="The ID# location you want to display" />
+		</url>
+		<params>
+		   	<param name="showmaponitempage" type="list" default="1" label="Show map on item page?" description="Shows a small map with the marker on the item page.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			<param type="text" name="item_gmap_default_zoom" default="16" size="25" label="Item Page Map Zoom" description="Default Zoom of the map on the item page"/>
+			<param type="text" name="item_gmap_width" default="400" size="25" label="Item Page Map Width" description="Map width in pixels of the map displayed on the individual location's page (E.g: 500). "/>
+    		<param type="text" name="item_gmap_height" default="400" size="25" label="Item Page Map Height" description="Map height in pixels of the map displayed on the individual location's page (E.g: 500)." />
+			
+    		<param name="domhook" type="list" default="ondomready" label="DOM Load Event?" description="ADVANCED ONLY: This allows you to switch between the various page load events that we use to initialize the Google Map.  Try different settings here if your map does not display.">
+				<option value="ondomready">onDomReady (Joomla 1.5)</option>
+				<option value="domready">domready (Joomla 1.6)</option>
+				<option value="onload">Regular BODY onload event</option>
+			</param>		
+		</params>
+	</state>
+</metadata>
